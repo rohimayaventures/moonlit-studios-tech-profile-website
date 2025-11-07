@@ -1,0 +1,39 @@
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Node modules (if you add any build tools later)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build outputs
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.log
+
+# Python cache (for helper scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Backup files
+*.backup
+*.bak
+*~
+
+# OS files
+Thumbs.db
+Desktop.ini
