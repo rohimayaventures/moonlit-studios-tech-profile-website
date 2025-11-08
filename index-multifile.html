@@ -12,6 +12,11 @@
     <meta property="og:description" content="15+ years healthcare operations leader. UI/UX Designer. Full-Stack Developer. Where Healthcare Meets Creativity Meets Technology.">
     <meta property="og:type" content="website">
     
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/animations.css">
@@ -65,34 +70,35 @@
         
         <!-- About Me Video Section -->
         <div style="max-width: 900px; margin: 0 auto 3rem;">
-            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: linear-gradient(135deg, var(--mermaid-teal), var(--twilight-purple)); border-radius: 15px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); margin-bottom: 3rem;">
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: linear-gradient(135deg, var(--olive), var(--dark-gray)); border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.15); border: 1px solid var(--cream);">
                 <!-- VIDEO PLACEHOLDER - Replace this div with Loom or YouTube embed -->
-                <div id="about-video-placeholder" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center; padding: 2rem;">
-                    <div style="font-size: 5rem; margin-bottom: 1rem; animation: pulse 2s infinite;">▶️</div>
-                    <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Meet Hannah: The CEO Who Codes 🦚</h3>
-                    <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto 1.5rem; color: rgba(255,255,255,0.95);">
-                        Record a 2-3 minute video introducing yourself! Talk about your healthcare background, author journey, and why you're the perfect hire.
+                <div id="about-video-placeholder" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center; padding: 3rem;">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; background: rgba(245, 243, 238, 0.15); display: flex; align-items: center; justify-content: center; margin-bottom: 2rem; border: 2px solid var(--cream);">
+                        <div style="width: 0; height: 0; border-left: 25px solid var(--cream); border-top: 15px solid transparent; border-bottom: 15px solid transparent; margin-left: 8px;"></div>
+                    </div>
+                    <h3 style="font-family: 'Crimson Text', serif; font-size: 2rem; margin-bottom: 1rem; color: var(--cream); font-weight: 600; letter-spacing: 0.5px;">About Hannah</h3>
+                    <p style="font-family: 'Inter', sans-serif; font-size: 1rem; max-width: 500px; margin: 0 auto 2rem; color: rgba(245, 243, 238, 0.9); line-height: 1.6; font-weight: 300;">
+                        Add your introduction video here (2-3 minutes)<br>
+                        Loom or YouTube embed
                     </p>
-                    <div style="background: rgba(255,255,255,0.2); padding: 1.5rem 2rem; border-radius: 10px; backdrop-filter: blur(10px); border: 2px solid rgba(255,255,255,0.3); max-width: 500px; margin: 0 auto;">
-                        <p style="font-weight: 700; margin-bottom: 0.5rem; font-size: 1.1rem;">🎥 To Add Your Video:</p>
-                        <ol style="text-align: left; font-size: 0.95rem; line-height: 1.8; margin-bottom: 0;">
-                            <li>Record on <strong>Loom.com</strong> (free, easy)</li>
-                            <li>Get your video link/embed code</li>
-                            <li>Replace this placeholder div with:<br>
-                                <code style="background: rgba(0,0,0,0.3); padding: 0.3rem 0.6rem; border-radius: 5px; display: inline-block; margin-top: 0.5rem; font-size: 0.85rem;">&lt;iframe src="YOUR_LOOM_LINK"&gt;</code>
-                            </li>
+                    <div style="background: rgba(245, 243, 238, 0.1); padding: 1.5rem; border-radius: 8px; backdrop-filter: blur(10px); border: 1px solid rgba(245, 243, 238, 0.2); max-width: 450px;">
+                        <p style="font-family: 'Inter', sans-serif; font-weight: 500; margin-bottom: 0.8rem; font-size: 0.95rem; color: var(--cream);">Quick Setup:</p>
+                        <ol style="text-align: left; font-size: 0.875rem; line-height: 1.8; margin: 0; padding-left: 1.2rem; color: rgba(245, 243, 238, 0.85); font-family: 'Inter', sans-serif; font-weight: 300;">
+                            <li>Record on Loom.com</li>
+                            <li>Copy embed code</li>
+                            <li>Replace this div with iframe</li>
                         </ol>
                     </div>
                 </div>
                 <!-- 
-                EXAMPLE: When ready, replace the placeholder div above with:
+                TO ADD VIDEO: Replace the div above with:
                 <iframe 
                     src="https://www.loom.com/embed/YOUR_VIDEO_ID" 
                     frameborder="0" 
                     webkitallowfullscreen 
                     mozallowfullscreen 
                     allowfullscreen
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 15px;">
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 12px;">
                 </iframe>
                 -->
             </div>
@@ -206,23 +212,25 @@
         <div class="portfolio-grid">
             <div class="project-card hover-lift">
                 <!-- VIDEO PLACEHOLDER - Rohimaya Health AI Demo -->
-                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: linear-gradient(135deg, #6B7C59, #2A2A2A); border-radius: 12px 12px 0 0;">
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: linear-gradient(135deg, var(--olive), var(--dark-gray)); border-radius: 12px 12px 0 0; border: 1px solid var(--light-gray);">
                     <div id="rohimaya-video-placeholder" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center; padding: 2rem;">
-                        <div style="font-size: 4rem; margin-bottom: 0.5rem; animation: pulse 2s infinite;">▶️</div>
-                        <h3 style="color: white; font-size: 1.5rem; margin-bottom: 0.5rem;">Rohimaya Health AI Demo</h3>
-                        <p style="font-size: 0.9rem; opacity: 0.9;">Add your Loom/YouTube demo video here!</p>
+                        <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(245, 243, 238, 0.15); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; border: 2px solid var(--cream);">
+                            <div style="width: 0; height: 0; border-left: 20px solid var(--cream); border-top: 12px solid transparent; border-bottom: 12px solid transparent; margin-left: 6px;"></div>
+                        </div>
+                        <h3 style="font-family: 'Crimson Text', serif; color: var(--cream); font-size: 1.4rem; margin-bottom: 0.5rem; font-weight: 600;">Rohimaya Health AI</h3>
+                        <p style="font-family: 'Inter', sans-serif; font-size: 0.875rem; opacity: 0.85; font-weight: 300;">Project demo video</p>
                     </div>
                     <!-- 
                     TO ADD VIDEO: Replace placeholder div above with:
                     <iframe src="https://www.loom.com/embed/YOUR_VIDEO_ID" 
                             frameborder="0" allowfullscreen
-                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 12px 12px 0 0;">
                     </iframe>
                     -->
                 </div>
                 <div class="project-content">
                     <h3>Rohimaya Health AI</h3>
-                    <p>Clinical handoff platform reducing handoff time by 80%. Complete UI/UX design and development from wireframes to production. HIPAA-compliant, AI-powered, used by real clinicians saving real lives. <strong>Part of Pagade Ventures portfolio.</strong></p>
+                    <p>Clinical handoff platform reducing handoff time by 80%. Complete UI/UX design and development from wireframes to production. HIPAA-compliant, AI-powered, used by real clinicians saving real lives.</p>
                     <div class="tech-stack">
                         <span>React</span>
                         <span>Node.js</span>
@@ -230,19 +238,21 @@
                         <span>Healthcare</span>
                         <span>HIPAA</span>
                     </div>
-                    <p style="font-weight: 700; color: var(--mermaid-teal); margin-top: 1rem; font-size: 1.1rem;">
-                        80% Time Reduction | $2-4B Exit Potential | Saving Lives Daily
+                    <p style="font-weight: 600; color: var(--olive); margin-top: 1rem; font-size: 1.05rem; font-family: 'Inter', sans-serif;">
+                        80% Time Reduction • Pagade Ventures
                     </p>
                 </div>
             </div>
             
             <div class="project-card hover-lift">
                 <!-- VIDEO PLACEHOLDER - AuthorFlow Studio Demo -->
-                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: linear-gradient(135deg, #FFD700, #FFA500); border-radius: 12px 12px 0 0;">
-                    <div id="authorflow-video-placeholder" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center; padding: 2rem;">
-                        <div style="font-size: 4rem; margin-bottom: 0.5rem; animation: pulse 2s infinite;">▶️</div>
-                        <h3 style="color: white; font-size: 1.5rem; margin-bottom: 0.5rem;">AuthorFlow Studio Demo</h3>
-                        <p style="font-size: 0.9rem; opacity: 0.9;">Show authors how you built their dream tool!</p>
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: linear-gradient(135deg, var(--cream), var(--light-gray)); border-radius: 12px 12px 0 0; border: 1px solid var(--dark-gray);">
+                    <div id="authorflow-video-placeholder" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--dark-gray); text-align: center; padding: 2rem;">
+                        <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(42, 42, 42, 0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; border: 2px solid var(--dark-gray);">
+                            <div style="width: 0; height: 0; border-left: 20px solid var(--dark-gray); border-top: 12px solid transparent; border-bottom: 12px solid transparent; margin-left: 6px;"></div>
+                        </div>
+                        <h3 style="font-family: 'Crimson Text', serif; color: var(--dark-gray); font-size: 1.4rem; margin-bottom: 0.5rem; font-weight: 600;">AuthorFlow Studio</h3>
+                        <p style="font-family: 'Inter', sans-serif; font-size: 0.875rem; opacity: 0.7; font-weight: 300;">Project demo video</p>
                     </div>
                     <!-- 
                     TO ADD VIDEO: Replace placeholder div above with:
@@ -262,7 +272,7 @@
                         <span>Audio Processing</span>
                         <span>Stripe</span>
                     </div>
-                    <p style="font-weight: 700; color: var(--mermaid-teal); margin-top: 1rem; font-size: 1.1rem;">
+                    <p style="font-weight: 700; color: var(--olive); margin-top: 1rem; font-size: 1.1rem;">
                         90% Cost Reduction | Authors Empowered | Built By An Author
                     </p>
                 </div>
@@ -270,11 +280,13 @@
             
             <div class="project-card hover-lift">
                 <!-- VIDEO PLACEHOLDER - Legendary Learn Demo -->
-                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: linear-gradient(135deg, #D4AF37, #6B7C59); border-radius: 12px 12px 0 0;">
-                    <div id="legendarylearn-video-placeholder" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center; padding: 2rem;">
-                        <div style="font-size: 4rem; margin-bottom: 0.5rem; animation: pulse 2s infinite;">▶️</div>
-                        <h3 style="color: white; font-size: 1.5rem; margin-bottom: 0.5rem;">Legendary Learn Demo</h3>
-                        <p style="font-size: 0.9rem; opacity: 0.9;">Demo the quest-based learning experience!</p>
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: linear-gradient(135deg, var(--cream), var(--light-gray)); border-radius: 12px 12px 0 0; border: 1px solid var(--dark-gray);">
+                    <div id="legendarylearn-video-placeholder" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--dark-gray); text-align: center; padding: 2rem;">
+                        <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(42, 42, 42, 0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; border: 2px solid var(--dark-gray);">
+                            <div style="width: 0; height: 0; border-left: 20px solid var(--dark-gray); border-top: 12px solid transparent; border-bottom: 12px solid transparent; margin-left: 6px;"></div>
+                        </div>
+                        <h3 style="font-family: 'Crimson Text', serif; color: var(--dark-gray); font-size: 1.4rem; margin-bottom: 0.5rem; font-weight: 600;">Legendary Learn</h3>
+                        <p style="font-family: 'Inter', sans-serif; font-size: 0.875rem; opacity: 0.7; font-weight: 300;">Project demo video</p>
                     </div>
                     <!-- 
                     TO ADD VIDEO: Replace placeholder div above with:
@@ -294,14 +306,14 @@
                         <span>UI/UX</span>
                         <span>Storytelling</span>
                     </div>
-                    <p style="font-weight: 700; color: var(--mermaid-teal); margin-top: 1rem; font-size: 1.1rem;">
+                    <p style="font-weight: 700; color: var(--olive); margin-top: 1rem; font-size: 1.1rem;">
                         Visual Learning | Story-Driven | Creative + Technical
                     </p>
                 </div>
             </div>
         </div>
         
-        <div style="text-align: center; margin-top: 4rem; padding: 3rem; background: var(--pearl-white); border-radius: 15px; border: 3px solid var(--mermaid-teal);">
+        <div style="text-align: center; margin-top: 4rem; padding: 3rem; background: var(--cream); border-radius: 15px; border: 2px solid var(--olive);">
             <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--midnight);">Want to see your project here?</h3>
             <p style="font-size: 1.2rem; color: #666; margin-bottom: 2rem;">Let's build something legendary together under the moonlight.</p>
             <a href="#contact" class="btn btn-primary peacock-btn" style="font-size: 1.1rem;">Start Your Project 🌙</a>
@@ -316,7 +328,7 @@
             </div>
             
             <h2 style="font-size: 3rem; margin-bottom: 1rem; color: white; text-shadow: 2px 2px 8px rgba(0,0,0,0.3); line-height: 1.2;">
-                Healthcare Tech Expert<br>Ready to <span style="color: #FFD700; font-weight: 900;">Start Immediately</span>
+                Healthcare Tech Expert<br>Ready to <span style="color: var(--olive); font-weight: 900;">Start Immediately</span>
             </h2>
             
             <p style="font-size: 1.3rem; line-height: 1.8; margin: 2rem auto; max-width: 700px; color: rgba(255,255,255,0.95);">
@@ -324,7 +336,7 @@
             </p>
             
             <div style="background: rgba(0,0,0,0.3); padding: 2.5rem; border-radius: 15px; margin: 3rem auto; max-width: 650px; border: 2px solid rgba(255,255,255,0.2); backdrop-filter: blur(10px);">
-                <h3 style="font-size: 1.6rem; margin-bottom: 1.5rem; color: #FFD700; font-weight: 800;">Core Capabilities</h3>
+                <h3 style="font-size: 1.6rem; margin-bottom: 1.5rem; color: var(--cream); font-weight: 800;">Core Capabilities</h3>
                 <ul style="list-style: none; padding: 0; text-align: left; font-size: 1.15rem; line-height: 2;">
                     <li><strong>Healthcare Operations</strong> — Deep understanding of clinical workflows, compliance, and regulatory requirements</li>
                     <li><strong>Full-Stack Development</strong> — React, Node, Python. Complete ownership from design through deployment</li>
@@ -335,7 +347,7 @@
             </div>
             
             <div style="margin-top: 3rem;">
-                <a href="#contact" class="btn btn-primary" style="font-size: 1.3rem; padding: 1.2rem 3rem; background: linear-gradient(135deg, #FFD700, #FFA500); color: #000; font-weight: 800; box-shadow: 0 10px 40px rgba(255,215,0,0.4); text-transform: uppercase; letter-spacing: 1px; border: none; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-5px) scale(1.05)'; this.style.boxShadow='0 15px 60px rgba(255,215,0,0.6)';" onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 10px 40px rgba(255,215,0,0.4)';">
+                <a href="#contact" class="btn btn-primary" style="font-size: 1.3rem; padding: 1.2rem 3rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">
                     Get In Touch
                 </a>
                 <p style="margin-top: 1.5rem; font-size: 1rem; opacity: 0.9;">
