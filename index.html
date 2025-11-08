@@ -116,6 +116,7 @@
             background: linear-gradient(135deg, var(--black) 0%, var(--dark-gray) 100%);
             color: var(--white);
             position: relative;
+            overflow: hidden;
         }
         
         .hero-content {
@@ -123,6 +124,7 @@
             z-index: 1;
             max-width: 1000px;
             animation: fadeIn 1s ease-out;
+            will-change: transform, opacity;
         }
         
         .status-badge {
@@ -439,8 +441,10 @@
             border: 2px solid var(--light-gray);
             border-radius: 12px;
             overflow: hidden;
-            transition: all 0.4s ease;
+            transition: all 0.4s ease, transform 0.1s;
             position: relative;
+            transform-style: preserve-3d;
+            will-change: transform;
         }
         
         .project-card::before {
@@ -1624,7 +1628,7 @@
 
         
         
-        // Floating Chai Cup - Scroll to Top (single guarded implementation)
+        // Floating Peacock Button - Scroll to Top
         (function() {
             const chaiButton = document.getElementById('chaiButton');
             if (!chaiButton) return;
@@ -1641,6 +1645,241 @@
             // Smooth scroll to top
             chaiButton.addEventListener('click', () => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+
+        // 🌟 EPIC INTERACTIVE FEATURES 🌟
+        
+        // 1. Animated Starfield Background
+        (function() {
+            const hero = document.querySelector('.hero');
+            if (!hero) return;
+            
+            const canvas = document.createElement('canvas');
+            canvas.style.position = 'absolute';
+            canvas.style.top = '0';
+            canvas.style.left = '0';
+            canvas.style.width = '100%';
+            canvas.style.height = '100%';
+            canvas.style.zIndex = '0';
+            canvas.style.pointerEvents = 'none';
+            hero.style.position = 'relative';
+            hero.insertBefore(canvas, hero.firstChild);
+            
+            const ctx = canvas.getContext('2d');
+            let stars = [];
+            let animationId;
+            
+            function resizeCanvas() {
+                canvas.width = hero.offsetWidth;
+                canvas.height = hero.offsetHeight;
+                initStars();
+            }
+            
+            function initStars() {
+                stars = [];
+                const numStars = Math.floor((canvas.width * canvas.height) / 3000);
+                for (let i = 0; i < numStars; i++) {
+                    stars.push({
+                        x: Math.random() * canvas.width,
+                        y: Math.random() * canvas.height,
+                        radius: Math.random() * 1.5,
+                        opacity: Math.random(),
+                        speed: Math.random() * 0.5 + 0.2
+                    });
+                }
+            }
+            
+            function drawStars() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                stars.forEach(star => {
+                    ctx.beginPath();
+                    ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(255, 215, 0, ${star.opacity})`;
+                    ctx.fill();
+                    
+                    star.opacity += star.speed * 0.01;
+                    if (star.opacity > 1 || star.opacity < 0) star.speed *= -1;
+                });
+                animationId = requestAnimationFrame(drawStars);
+            }
+            
+            resizeCanvas();
+            drawStars();
+            window.addEventListener('resize', resizeCanvas);
+        })();
+        
+        // 2. Typing Animation for "The CEO Who Codes"
+        (function() {
+            const titleElement = document.querySelector('.title');
+            if (!titleElement) return;
+            
+            const originalText = "The CEO Who Codes";
+            titleElement.textContent = "";
+            titleElement.style.borderRight = "2px solid var(--gold)";
+            titleElement.style.paddingRight = "5px";
+            titleElement.style.display = "inline-block";
+            
+            let charIndex = 0;
+            function typeWriter() {
+                if (charIndex < originalText.length) {
+                    titleElement.textContent += originalText.charAt(charIndex);
+                    charIndex++;
+                    setTimeout(typeWriter, 100);
+                } else {
+                    setTimeout(() => {
+                        titleElement.style.borderRight = "none";
+                    }, 500);
+                }
+            }
+            
+            setTimeout(typeWriter, 1000);
+        })();
+        
+        // 3. 3D Flip Animation for Trifecta Cards
+        (function() {
+            const trifectaCards = document.querySelectorAll('.trifecta-card');
+            trifectaCards.forEach(card => {
+                card.style.transition = 'transform 0.6s';
+                card.style.transformStyle = 'preserve-3d';
+                
+                card.addEventListener('mouseenter', () => {
+                    card.style.transform = 'rotateY(10deg) scale(1.05)';
+                    card.style.boxShadow = '0 10px 40px rgba(212, 175, 55, 0.3)';
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'rotateY(0deg) scale(1)';
+                    card.style.boxShadow = '0 4px 20px rgba(0,0,0,0.08)';
+                });
+            });
+        })();
+        
+        // 4. Moonlight Cursor Glow Effect
+        (function() {
+            const glow = document.createElement('div');
+            glow.style.position = 'fixed';
+            glow.style.width = '300px';
+            glow.style.height = '300px';
+            glow.style.borderRadius = '50%';
+            glow.style.background = 'radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%)';
+            glow.style.pointerEvents = 'none';
+            glow.style.zIndex = '9999';
+            glow.style.transform = 'translate(-50%, -50%)';
+            glow.style.transition = 'opacity 0.3s';
+            glow.style.opacity = '0';
+            document.body.appendChild(glow);
+            
+            let isHovering = false;
+            
+            document.addEventListener('mousemove', (e) => {
+                glow.style.left = e.clientX + 'px';
+                glow.style.top = e.clientY + 'px';
+                if (!isHovering) {
+                    glow.style.opacity = '1';
+                    isHovering = true;
+                }
+            });
+            
+            document.addEventListener('mouseleave', () => {
+                glow.style.opacity = '0';
+                isHovering = false;
+            });
+        })();
+        
+        // 5. Parallax Scroll Effect
+        (function() {
+            const hero = document.querySelector('.hero');
+            if (!hero) return;
+            
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const heroContent = hero.querySelector('.hero-content');
+                if (heroContent && scrolled < window.innerHeight) {
+                    heroContent.style.transform = `translateY(${scrolled * 0.4}px)`;
+                    heroContent.style.opacity = 1 - (scrolled / window.innerHeight);
+                }
+            });
+        })();
+        
+        // 6. Project Cards Hover Tilt Effect
+        (function() {
+            const projectCards = document.querySelectorAll('.project-card');
+            projectCards.forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    const rotateX = (y - centerY) / 20;
+                    const rotateY = (centerX - x) / 20;
+                    
+                    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+                });
+            });
+        })();
+        
+        // 7. Peacock Trail Cursor Effect
+        (function() {
+            const peacocks = [];
+            const maxPeacocks = 5;
+            
+            document.addEventListener('mousemove', (e) => {
+                if (Math.random() > 0.7) return; // Only 30% of movements create trail
+                
+                const peacock = document.createElement('div');
+                peacock.textContent = '🦚';
+                peacock.style.position = 'fixed';
+                peacock.style.left = e.clientX + 'px';
+                peacock.style.top = e.clientY + 'px';
+                peacock.style.pointerEvents = 'none';
+                peacock.style.fontSize = '20px';
+                peacock.style.zIndex = '9998';
+                peacock.style.transition = 'all 0.5s ease-out';
+                document.body.appendChild(peacock);
+                
+                peacocks.push(peacock);
+                
+                setTimeout(() => {
+                    peacock.style.opacity = '0';
+                    peacock.style.transform = 'translateY(-30px) scale(0.5)';
+                }, 100);
+                
+                setTimeout(() => {
+                    peacock.remove();
+                    peacocks.shift();
+                }, 600);
+                
+                if (peacocks.length > maxPeacocks) {
+                    const old = peacocks.shift();
+                    if (old && old.parentNode) old.remove();
+                }
+            });
+        })();
+        
+        // 8. Scroll Progress Bar
+        (function() {
+            const progressBar = document.createElement('div');
+            progressBar.style.position = 'fixed';
+            progressBar.style.top = '0';
+            progressBar.style.left = '0';
+            progressBar.style.width = '0%';
+            progressBar.style.height = '4px';
+            progressBar.style.background = 'linear-gradient(90deg, var(--gold), var(--olive))';
+            progressBar.style.zIndex = '10000';
+            progressBar.style.transition = 'width 0.1s';
+            document.body.appendChild(progressBar);
+            
+            window.addEventListener('scroll', () => {
+                const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                const scrolled = (winScroll / height) * 100;
+                progressBar.style.width = scrolled + '%';
             });
         })();
 
