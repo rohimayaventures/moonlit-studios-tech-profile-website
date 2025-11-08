@@ -118,6 +118,9 @@
     <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
+    <!-- Skip to main content link for keyboard accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Hero Section -->
     <section class="hero">
         <canvas id="particles-canvas"></canvas>
@@ -171,6 +174,7 @@
                     <div class="video-container">
                         <iframe 
                             src="PLACEHOLDER_INTRO_VIDEO" 
+                            title="Hannah Pagade 60-second introduction video"
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen
@@ -505,10 +509,10 @@
 
             <div class="portfolio-controls" aria-hidden="false">
                 <div class="filter-buttons" role="tablist" aria-label="Filter projects">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="apps">Healthcare Apps</button>
-                    <button class="filter-btn" data-filter="websites">Websites</button>
-                    <button class="filter-btn" data-filter="dashboards">Dashboards</button>
+                    <button class="filter-btn active" data-filter="all" aria-label="Show all projects">All</button>
+                    <button class="filter-btn" data-filter="apps" aria-label="Show healthcare apps">Healthcare Apps</button>
+                    <button class="filter-btn" data-filter="websites" aria-label="Show websites">Websites</button>
+                    <button class="filter-btn" data-filter="dashboards" aria-label="Show dashboards">Dashboards</button>
                 </div>
             </div>
 

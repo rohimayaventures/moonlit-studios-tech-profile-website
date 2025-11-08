@@ -21,6 +21,49 @@
     box-sizing: border-box;
 }
 
+/* ========================================
+   ACCESSIBILITY & PROFESSIONAL POLISH
+   ======================================== */
+
+/* Smooth scrolling for entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Skip to main content link for keyboard navigation */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #0A1128;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    text-decoration: none;
+    z-index: 1000;
+    border-radius: 0 0 4px 0;
+    font-weight: 600;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Focus indicators for keyboard navigation */
+*:focus {
+    outline: 3px solid #4A9B9B;
+    outline-offset: 2px;
+}
+
+a:focus, button:focus {
+    outline: 3px solid #4A9B9B;
+    outline-offset: 2px;
+}
+
+/* Remove focus outline for mouse users, keep for keyboard users */
+*:focus:not(:focus-visible) {
+    outline: none;
+}
+
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background: #FFFFFF;
@@ -40,6 +83,13 @@ h1, h2, h3, h4, h5, h6 {
 p {
     color: #1B4965;
     line-height: 1.7;
+}
+
+/* Images - responsive and accessible */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Hero Section */
@@ -383,7 +433,7 @@ section h2 {
     background: white;
     padding: 2.5rem;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
     position: relative;
     transition: all 0.3s ease;
     border: 2px solid transparent;
@@ -392,17 +442,18 @@ section h2 {
 .service-card.featured {
     border: 3px solid var(--mermaid-teal);
     transform: scale(1.02);
-    box-shadow: 0 10px 30px rgba(74, 155, 155, 0.2);
+    box-shadow: 0 8px 30px rgba(74, 155, 155, 0.15);
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
     border-color: var(--mermaid-teal);
 }
 
 .service-card.featured:hover {
-    transform: translateY(-5px) scale(1.02);
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 12px 40px rgba(74, 155, 155, 0.2);
 }
 
 .service-icon {
@@ -453,14 +504,14 @@ section h2 {
     background: white;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     border: 2px solid transparent;
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
     border-color: var(--mermaid-teal);
 }
 
@@ -700,14 +751,14 @@ footer a:hover {
     background: white;
     padding: 2.5rem;
     border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
     border: 2px solid transparent;
 }
 
 .value-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(74, 155, 155, 0.2);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
     border-color: var(--mermaid-teal);
 }
 
@@ -1377,5 +1428,81 @@ html {
     
     .price-tag .price {
         font-size: 2rem;
+    }
+}
+
+/* ========================================
+   PRINT STYLES FOR PROFESSIONAL PRINTING
+   ======================================== */
+
+@media print {
+    /* Hide non-essential elements when printing */
+    .no-print,
+    .hero-cta,
+    .scroll-indicator,
+    .filter-buttons,
+    #particles-canvas,
+    button,
+    .btn {
+        display: none !important;
+    }
+    
+    /* Remove backgrounds to save ink */
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .hero {
+        background: white !important;
+        min-height: auto;
+        padding: 2rem 0;
+    }
+    
+    .hero-content {
+        color: black;
+    }
+    
+    .name-text {
+        -webkit-text-fill-color: #0A1128;
+        color: #0A1128;
+    }
+    
+    /* Make links visible with URLs */
+    a {
+        color: #0A1128;
+        text-decoration: underline;
+    }
+    
+    a[href]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        font-style: italic;
+    }
+    
+    /* Avoid page breaks inside elements */
+    .service-card,
+    .project-card,
+    .value-card {
+        page-break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    /* Ensure good spacing */
+    h1, h2, h3 {
+        page-break-after: avoid;
+        color: #0A1128;
+    }
+    
+    section {
+        page-break-inside: avoid;
+    }
+    
+    /* Remove shadows and transitions */
+    * {
+        box-shadow: none !important;
+        text-shadow: none !important;
+        transition: none !important;
     }
 }
