@@ -4,21 +4,15 @@
    ======================================== */
 
 :root {
-    /* Healthcare Tech Color Palette - Medical Trust + Innovation */
+    /* Moonlit Studios Brand Palette - Moon, Ocean, Mermaid Theme */
     --midnight: #0A1128;
     --deep-ocean: #1B4965;
-    --medical-teal: #00B8A9;
-    --trust-blue: #2E5EAA;
-    --healing-cyan: #5CE1E6;
-    --vital-red: #FF6B6B;
-    --medical-white: #FFFFFF;
+    --mermaid-teal: #4A9B9B;
     --lunar-gold: #FFD700;
     --moonlight-silver: #E8E8E8;
     --pearl-white: #FAFAFA;
     --starlight: #CAE9FF;
-    --mermaid-teal: #00B8A9;
-    --health-green: #06D6A0;
-    --pulse-glow: rgba(0, 184, 169, 0.4);
+    --white: #FFFFFF;
 }
 
 * {
@@ -56,12 +50,12 @@ html {
 
 /* Focus indicators for keyboard navigation */
 *:focus {
-    outline: 3px solid #00B8A9;
+    outline: 3px solid #4A9B9B;
     outline-offset: 2px;
 }
 
 a:focus, button:focus {
-    outline: 3px solid #00B8A9;
+    outline: 3px solid #4A9B9B;
     outline-offset: 2px;
 }
 
@@ -136,10 +130,10 @@ img {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(13, 27, 42, 0.97);
+    background: rgba(10, 17, 40, 0.97);
     backdrop-filter: blur(15px);
-    border-bottom: 2px solid rgba(0, 184, 169, 0.4);
-    box-shadow: 0 4px 20px rgba(0, 184, 169, 0.15);
+    border-bottom: 2px solid rgba(74, 155, 155, 0.4);
+    box-shadow: 0 4px 20px rgba(74, 155, 155, 0.15);
     z-index: 1000;
     padding: 1rem 0;
 }
@@ -175,7 +169,7 @@ img {
 
 .brand-tagline {
     font-size: 0.75rem;
-    color: #00B8A9;
+    color: #4A9B9B;
     font-weight: 600;
 }
 
@@ -202,14 +196,14 @@ img {
     left: 0;
     width: 0;
     height: 3px;
-    background: linear-gradient(90deg, #00B8A9, #5CE1E6);
+    background: linear-gradient(90deg, #4A9B9B, #FFD700);
     transition: width 0.3s ease;
-    box-shadow: 0 0 8px rgba(0, 184, 169, 0.6);
+    box-shadow: 0 0 8px rgba(74, 155, 155, 0.6);
 }
 
 .nav-link:hover {
-    color: #5CE1E6;
-    text-shadow: 0 0 10px rgba(92, 225, 230, 0.5);
+    color: #4A9B9B;
+    text-shadow: 0 0 10px rgba(74, 155, 155, 0.5);
 }
 
 .nav-link:hover::after {
@@ -217,24 +211,24 @@ img {
 }
 
 .nav-cta {
-    background: linear-gradient(135deg, #00B8A9 0%, #2E5EAA 100%);
+    background: linear-gradient(135deg, #4A9B9B 0%, #1B4965 100%);
     color: #FFFFFF !important;
     padding: 0.75rem 1.5rem;
     border-radius: 50px;
     font-weight: 800;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 184, 169, 0.5);
+    box-shadow: 0 4px 15px rgba(74, 155, 155, 0.5);
     letter-spacing: 0.5px;
 }
 
 .nav-cta:hover {
     transform: translateY(-2px) scale(1.05);
-    box-shadow: 0 8px 30px rgba(0, 184, 169, 0.8);
-    background: linear-gradient(135deg, #06D6A0 0%, #00B8A9 100%);
+    box-shadow: 0 8px 30px rgba(74, 155, 155, 0.8);
+    background: linear-gradient(135deg, #FFD700 0%, #4A9B9B 100%);
 }
 
-/* Hero Section - Healthcare Tech Inspired */
+/* Hero Section - Moonlit Ocean Theme */
 .hero {
     margin-top: 80px;
     min-height: 100vh;
@@ -243,61 +237,39 @@ img {
     justify-content: center;
     background: 
         linear-gradient(135deg, 
-            #0D1B2A 0%, 
-            #1B3A4B 25%,
-            #2E5EAA 50%,
-            #1B3A4B 75%,
-            #0D1B2A 100%
+            #0A1128 0%, 
+            #1B4965 40%,
+            #4A9B9B 70%,
+            #1B4965 90%,
+            #0A1128 100%
         );
     position: relative;
     overflow: hidden;
 }
 
-/* MEDICAL HEARTBEAT GRID BACKGROUND */
+/* MOONLIT STARS BACKGROUND */
 .hero::before {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
     background-image: 
-        repeating-linear-gradient(
-            0deg,
-            rgba(0, 184, 169, 0.03) 0px,
-            transparent 1px,
-            transparent 40px,
-            rgba(0, 184, 169, 0.03) 41px
-        ),
-        repeating-linear-gradient(
-            90deg,
-            rgba(0, 184, 169, 0.03) 0px,
-            transparent 1px,
-            transparent 40px,
-            rgba(0, 184, 169, 0.03) 41px
-        );
+        radial-gradient(2px 2px at 20px 30px, rgba(255, 215, 0, 0.8), transparent),
+        radial-gradient(2px 2px at 60px 70px, rgba(202, 233, 255, 0.6), transparent),
+        radial-gradient(1px 1px at 50px 50px, white, transparent),
+        radial-gradient(1px 1px at 130px 80px, rgba(255, 215, 0, 0.7), transparent),
+        radial-gradient(2px 2px at 90px 10px, white, transparent),
+        radial-gradient(1px 1px at 150px 120px, rgba(202, 233, 255, 0.8), transparent);
+    background-size: 200px 200px;
+    background-position: 0 0, 40px 60px, 130px 270px;
+    animation: twinkleStars 25s linear infinite;
+    opacity: 0.6;
     z-index: 1;
-    opacity: 0.4;
 }
 
-/* FLOATING MEDICAL CROSSES PATTERN */
-.hero::after {
-    content: '✚ ✚ ✚ ✚ ✚ ✚ ✚ ✚ ✚ ✚';
-    position: absolute;
-    width: 200%;
-    height: 100%;
-    top: 0;
-    left: -50%;
-    font-size: 2rem;
-    color: rgba(92, 225, 230, 0.08);
-    letter-spacing: 80px;
-    line-height: 100px;
-    animation: floatCrosses 30s linear infinite;
-    z-index: 1;
-    overflow: hidden;
-}
-
-@keyframes floatCrosses {
-    from { transform: translateX(0) translateY(0); }
-    to { transform: translateX(100px) translateY(-100px); }
+@keyframes twinkleStars {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 0.9; }
 }
 
 #particles-canvas {
@@ -318,14 +290,14 @@ img {
     max-width: 1200px;
 }
 
-/* Availability Badge - Medical Pulse */
+/* Availability Badge - Moonlit Glow */
 .availability-badge {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(0, 184, 169, 0.2);
-    border: 2px solid var(--medical-teal);
-    color: var(--medical-white);
+    background: rgba(74, 155, 155, 0.2);
+    border: 2px solid var(--mermaid-teal);
+    color: var(--white);
     padding: 0.5rem 1.5rem;
     border-radius: 50px;
     font-size: 0.875rem;
@@ -333,45 +305,36 @@ img {
     margin-bottom: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    box-shadow: 0 0 20px rgba(0, 184, 169, 0.3);
+    box-shadow: 0 0 20px rgba(74, 155, 155, 0.4);
     animation: badgePulse 3s ease-in-out infinite;
 }
 
 @keyframes badgePulse {
     0%, 100% { 
-        box-shadow: 0 0 20px rgba(0, 184, 169, 0.3);
+        box-shadow: 0 0 20px rgba(74, 155, 155, 0.4);
     }
     50% { 
-        box-shadow: 0 0 30px rgba(0, 184, 169, 0.6);
+        box-shadow: 0 0 30px rgba(74, 155, 155, 0.7);
     }
 }
 
 .status-dot {
     width: 10px;
     height: 10px;
-    background: var(--health-green);
+    background: var(--mermaid-teal);
     border-radius: 50%;
-    animation: heartbeat 1.5s ease-in-out infinite;
-    box-shadow: 0 0 10px rgba(6, 214, 160, 0.8);
+    animation: moonPulse 2s ease-in-out infinite;
+    box-shadow: 0 0 10px rgba(74, 155, 155, 0.8);
 }
 
-@keyframes heartbeat {
+@keyframes moonPulse {
     0%, 100% { 
         transform: scale(1);
         opacity: 1;
     }
-    10% { 
-        transform: scale(1.3);
-    }
-    20% { 
-        transform: scale(1);
-    }
-    30% { 
-        transform: scale(1.3);
-    }
-    40% { 
-        transform: scale(1);
-        opacity: 1;
+    50% { 
+        transform: scale(1.2);
+        opacity: 0.7;
     }
 }
 
@@ -418,17 +381,17 @@ img {
 }
 
 .typing-text {
-    background: linear-gradient(135deg, #00B8A9 0%, #5CE1E6 100%);
+    background: linear-gradient(135deg, #4A9B9B 0%, #FFD700 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    filter: drop-shadow(0 0 20px rgba(0, 184, 169, 0.5));
+    filter: drop-shadow(0 0 20px rgba(74, 155, 155, 0.5));
 }
 
 .cursor {
-    color: var(--health-green);
+    color: var(--lunar-gold);
     animation: blink 1s infinite;
-    text-shadow: 0 0 10px rgba(6, 214, 160, 0.8);
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
 }
 
 @keyframes blink {
@@ -437,17 +400,29 @@ img {
 }
 
 .hero-subtitle {
-    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    color: #FFD700 !important;
+    font-weight: 800;
+    line-height: 1.6;
+    max-width: 850px;
+    margin: 0 auto 1.5rem;
+    text-shadow: 0 2px 20px rgba(255, 215, 0, 0.6);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.hero-description {
+    font-size: clamp(1.125rem, 2vw, 1.35rem);
     color: #FFFFFF !important;
-    font-weight: 600;
-    line-height: 1.9;
+    font-weight: 500;
+    line-height: 1.8;
     max-width: 750px;
     margin: 0 auto 3rem;
     text-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
     letter-spacing: 0.02em;
 }
 
-/* Stats Grid - Medical Dashboard Style */
+/* Stats Grid - Moonlit Elegance */
 .hero-stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -455,10 +430,11 @@ img {
     margin: 3rem auto;
     max-width: 900px;
     padding: 2rem;
-    background: rgba(0, 184, 169, 0.05);
+    background: rgba(74, 155, 155, 0.08);
     border-radius: 20px;
-    border: 1px solid rgba(0, 184, 169, 0.2);
+    border: 2px solid rgba(74, 155, 155, 0.3);
     backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(10, 17, 40, 0.5);
 }
 
 .stat-item {
@@ -466,7 +442,7 @@ img {
     padding: 1.5rem 1rem;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 15px;
-    border: 1px solid rgba(92, 225, 230, 0.2);
+    border: 2px solid rgba(74, 155, 155, 0.3);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -479,36 +455,36 @@ img {
     left: -100%;
     width: 100%;
     height: 3px;
-    background: linear-gradient(90deg, transparent, var(--medical-teal), transparent);
-    animation: scanLine 3s linear infinite;
+    background: linear-gradient(90deg, transparent, var(--lunar-gold), var(--mermaid-teal), transparent);
+    animation: moonGlide 4s linear infinite;
 }
 
-@keyframes scanLine {
+@keyframes moonGlide {
     0% { left: -100%; }
     100% { left: 100%; }
 }
 
 .stat-item:hover {
     transform: translateY(-5px);
-    background: rgba(0, 184, 169, 0.15);
-    border-color: var(--medical-teal);
-    box-shadow: 0 10px 30px rgba(0, 184, 169, 0.3);
+    background: rgba(74, 155, 155, 0.15);
+    border-color: var(--mermaid-teal);
+    box-shadow: 0 10px 30px rgba(74, 155, 155, 0.5);
 }
 
 .stat-number {
     font-size: 3.5rem;
     font-weight: 900;
-    background: linear-gradient(135deg, #00B8A9 0%, #5CE1E6 100%);
+    background: linear-gradient(135deg, #4A9B9B 0%, #FFD700 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     display: inline;
-    filter: drop-shadow(0 2px 10px rgba(0, 184, 169, 0.5));
+    filter: drop-shadow(0 2px 10px rgba(74, 155, 155, 0.6));
 }
 
 .plus {
     font-size: 2rem;
-    background: linear-gradient(135deg, #00B8A9 0%, #5CE1E6 100%);
+    background: linear-gradient(135deg, #4A9B9B 0%, #FFD700 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -584,54 +560,54 @@ img {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #00B8A9 0%, #2E5EAA 100%);
+    background: linear-gradient(135deg, #4A9B9B 0%, #1B4965 100%);
     color: #FFFFFF !important;
     box-shadow: 
-        0 6px 25px rgba(0, 184, 169, 0.6),
-        0 0 0 0 rgba(0, 184, 169, 0.7);
+        0 6px 25px rgba(74, 155, 155, 0.6),
+        0 0 0 0 rgba(74, 155, 155, 0.7);
     border: 3px solid transparent;
-    animation: buttonPulse 2s ease-in-out infinite;
+    animation: moonlitPulse 2s ease-in-out infinite;
 }
 
-@keyframes buttonPulse {
+@keyframes moonlitPulse {
     0%, 100% {
         box-shadow: 
-            0 6px 25px rgba(0, 184, 169, 0.6),
-            0 0 0 0 rgba(0, 184, 169, 0.7);
+            0 6px 25px rgba(74, 155, 155, 0.6),
+            0 0 0 0 rgba(74, 155, 155, 0.7);
     }
     50% {
         box-shadow: 
-            0 8px 30px rgba(0, 184, 169, 0.8),
-            0 0 0 10px rgba(0, 184, 169, 0);
+            0 8px 30px rgba(74, 155, 155, 0.8),
+            0 0 0 10px rgba(74, 155, 155, 0);
     }
 }
 
 .btn-primary:hover {
     transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 12px 45px rgba(0, 184, 169, 0.9);
-    background: linear-gradient(135deg, #06D6A0 0%, #00B8A9 100%);
+    box-shadow: 0 12px 45px rgba(74, 155, 155, 0.9);
+    background: linear-gradient(135deg, #FFD700 0%, #4A9B9B 100%);
     animation: none;
 }
 
 .btn-secondary {
     background: rgba(255, 255, 255, 0.05);
     color: #FFFFFF !important;
-    border: 3px solid #00B8A9;
+    border: 3px solid #4A9B9B;
     box-shadow: 
-        0 6px 20px rgba(0, 184, 169, 0.3),
-        inset 0 0 20px rgba(0, 184, 169, 0.1);
+        0 6px 20px rgba(74, 155, 155, 0.3),
+        inset 0 0 20px rgba(74, 155, 155, 0.1);
     backdrop-filter: blur(10px);
 }
 
 .btn-secondary:hover {
-    background: linear-gradient(135deg, #00B8A9 0%, #5CE1E6 100%);
-    border-color: #5CE1E6;
-    color: #0D1B2A !important;
+    background: linear-gradient(135deg, #4A9B9B 0%, #FFD700 100%);
+    border-color: #FFD700;
+    color: #0A1128 !important;
     transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 12px 45px rgba(92, 225, 230, 0.8);
+    box-shadow: 0 12px 45px rgba(255, 215, 0, 0.8);
 }
 
-/* Scroll Indicator - Medical Pulse Style */
+/* Scroll Indicator - Moonlit Style */
 .scroll-indicator {
     position: absolute;
     bottom: 2rem;
@@ -649,30 +625,30 @@ img {
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 700;
-    color: #FFFFFF;
-    text-shadow: 0 0 10px rgba(0, 184, 169, 0.6);
+    color: var(--starlight);
+    text-shadow: 0 0 10px rgba(74, 155, 155, 0.6);
 }
 
 .mouse {
     width: 26px;
     height: 40px;
-    border: 3px solid var(--medical-teal);
+    border: 3px solid var(--mermaid-teal);
     border-radius: 13px;
     position: relative;
-    box-shadow: 0 0 15px rgba(0, 184, 169, 0.5);
+    box-shadow: 0 0 15px rgba(74, 155, 155, 0.5);
 }
 
 .wheel {
     width: 5px;
     height: 10px;
-    background: var(--health-green);
+    background: var(--lunar-gold);
     border-radius: 3px;
     position: absolute;
     top: 8px;
     left: 50%;
     transform: translateX(-50%);
     animation: scroll 2s infinite;
-    box-shadow: 0 0 8px rgba(6, 214, 160, 0.9);
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.9);
 }
 
 @keyframes bounce {
@@ -721,8 +697,9 @@ section {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, transparent, var(--medical-teal), transparent);
+    background: linear-gradient(90deg, transparent, var(--mermaid-teal), var(--lunar-gold), transparent);
     border-radius: 2px;
+    box-shadow: 0 0 10px rgba(74, 155, 155, 0.5);
 }
 
 .section-intro {
@@ -1240,7 +1217,7 @@ section h2 {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, #FFD700, #00B8A9, #FFD700);
+    background: linear-gradient(90deg, #FFD700, #4A9B9B, #FFD700);
 }
 
 .footer-content {
@@ -1271,7 +1248,7 @@ section h2 {
 
 .footer-tagline {
     font-size: 1.25rem;
-    color: #00B8A9;
+    color: #4A9B9B;
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
@@ -1308,7 +1285,7 @@ section h2 {
 }
 
 .footer-section a:hover {
-    color: #00B8A9;
+    color: #4A9B9B;
     padding-left: 5px;
 }
 
@@ -1328,13 +1305,13 @@ section h2 {
 }
 
 .footer-contact a {
-    color: #00B8A9;
+    color: #4A9B9B;
     font-weight: 600;
 }
 
 .availability {
     background: rgba(74, 155, 155, 0.2);
-    border: 2px solid #00B8A9;
+    border: 2px solid #4A9B9B;
     padding: 0.5rem 1rem;
     border-radius: 50px;
     text-align: center;
@@ -1351,7 +1328,7 @@ section h2 {
 .footer-gradient-line {
     width: 100px;
     height: 3px;
-    background: linear-gradient(90deg, #00B8A9, #FFD700);
+    background: linear-gradient(90deg, #4A9B9B, #FFD700);
     margin: 0 auto 1.5rem;
 }
 
@@ -1361,7 +1338,7 @@ section h2 {
 }
 
 .footer-subtitle {
-    color: #00B8A9;
+    color: #4A9B9B;
     font-size: 0.875rem;
 }
 
@@ -2219,7 +2196,7 @@ html {
 .cursor-dot {
     width: 8px;
     height: 8px;
-    background: linear-gradient(135deg, #FFD700, #00B8A9);
+    background: linear-gradient(135deg, #FFD700, #4A9B9B);
     border-radius: 50%;
     position: fixed;
     pointer-events: none;
