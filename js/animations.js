@@ -65,9 +65,64 @@ function initCardEffects() {
     });
 }
 
+// Professional Golden Moon Cursor
+function initMoonCursor() {
+    // Create moon cursor element
+    const moon = document.createElement('div');
+    moon.className = 'cursor-moon';
+    document.body.appendChild(moon);
+    
+    let mouseX = 0;
+    let mouseY = 0;
+    let moonX = 0;
+    let moonY = 0;
+    
+    // Track mouse position
+    document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        moon.style.opacity = '0.8';
+    });
+    
+    // Smooth follow animation
+    function animateMoon() {
+        // Smooth easing
+        moonX += (mouseX - moonX) * 0.15;
+        moonY += (mouseY - moonY) * 0.15;
+        
+        moon.style.left = moonX + 'px';
+        moon.style.top = moonY + 'px';
+        
+        requestAnimationFrame(animateMoon);
+    }
+    
+    animateMoon();
+    
+    // Add active state on hover over interactive elements
+    const interactiveElements = document.querySelectorAll('a, button, .btn, .hover-lift');
+    
+    interactiveElements.forEach(element => {
+        element.addEventListener('mouseenter', () => {
+            moon.classList.add('active');
+        });
+        
+        element.addEventListener('mouseleave', () => {
+            moon.classList.remove('active');
+        });
+    });
+    
+    // Hide cursor when leaving window
+    document.addEventListener('mouseleave', () => {
+        moon.style.opacity = '0';
+    });
+    
+    console.log('🌙 Professional moon cursor activated');
+}
+
 // Run on load
 document.addEventListener('DOMContentLoaded', () => {
     createParticles();
     initParallax();
     initCardEffects();
+    initMoonCursor();
 });
