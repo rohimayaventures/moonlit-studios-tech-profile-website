@@ -450,118 +450,253 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p class="section-subtitle">Selected projects and case studies.</p>
-        
-        <div class="portfolio-grid">
-            <div class="project-card hover-lift">
-                <!-- VIDEO PLACEHOLDER - Rohimaya Health AI Demo -->
-                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: linear-gradient(135deg, var(--mermaid-teal), var(--deep-ocean)); border-radius: 12px 12px 0 0; border: 1px solid var(--starlight);">
-                    <div id="rohimaya-video-placeholder" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center; padding: 2rem;">
-                        <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(255, 255, 255, 0.15); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; border: 2px solid var(--starlight);">
-                            <div style="width: 0; height: 0; border-left: 20px solid var(--starlight); border-top: 12px solid transparent; border-bottom: 12px solid transparent; margin-left: 6px;"></div>
-                        </div>
-                        <h3 style="font-family: 'Crimson Text', serif; color: var(--starlight); font-size: 1.4rem; margin-bottom: 0.5rem; font-weight: 600;">Rohimaya Health AI</h3>
-                        <p style="font-family: 'Inter', sans-serif; font-size: 0.875rem; opacity: 0.9; font-weight: 300;">Project demo video</p>
-                    </div>
-                    <!-- 
-                    TO ADD VIDEO: Replace placeholder div above with:
-                    <iframe src="https://www.loom.com/embed/YOUR_VIDEO_ID" 
-                            frameborder="0" allowfullscreen
-                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 12px 12px 0 0;">
-                    </iframe>
-                    -->
-                </div>
-                <div class="project-content">
-                    <h3>Rohimaya Health AI</h3>
-                    <p>Clinical handoff platform reducing handoff time by 80%. Complete UI/UX design and development from wireframes to production. HIPAA-compliant, AI-powered, used by real clinicians saving real lives.</p>
-                    <div class="tech-stack">
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>AI/ML</span>
-                        <span>Healthcare</span>
-                        <span>HIPAA</span>
-                    </div>
-                                        <p style="font-weight: 600; color: var(--mermaid-teal); margin-top: 1rem; font-size: 1.05rem; font-family: 'Inter', sans-serif;">
-                        80% Time Reduction | HIPAA-Compliant | Clinical Impact
-                    </p>
+    <section id="portfolio" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-intro">Demo projects showcasing what I can build for your healthcare organization</p>
+
+            <div class="portfolio-controls" aria-hidden="false">
+                <div class="filter-buttons" role="tablist" aria-label="Filter projects">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="apps">Healthcare Apps</button>
+                    <button class="filter-btn" data-filter="websites">Websites</button>
+                    <button class="filter-btn" data-filter="dashboards">Dashboards</button>
                 </div>
             </div>
-            
-            <div class="project-card hover-lift">
-                <!-- VIDEO PLACEHOLDER - AuthorFlow Studio Demo -->
-                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: linear-gradient(135deg, var(--twilight-purple), var(--deep-ocean)); border-radius: 12px 12px 0 0; border: 1px solid var(--moonlight-silver);">
-                    <div id="authorflow-video-placeholder" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white; text-align: center; padding: 2rem;">
-                        <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(255, 255, 255, 0.15); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; border: 2px solid var(--moonlight-silver);">
-                            <div style="width: 0; height: 0; border-left: 20px solid var(--moonlight-silver); border-top: 12px solid transparent; border-bottom: 12px solid transparent; margin-left: 6px;"></div>
+
+            <div class="portfolio-grid" id="portfolio-grid">
+
+                <!-- PROJECT 1: Healthcare Patient Portal -->
+                <article class="project-card" data-category="apps" itemscope itemtype="https://schema.org/CreativeWork">
+                    <div class="project-image-wrapper">
+                        <div class="project-video">
+                            <iframe data-src="PLACEHOLDER_VIDEO_1" frameborder="0" loading="lazy" allowfullscreen title="Healthcare Patient Portal demo"></iframe>
                         </div>
-                        <h3 style="font-family: 'Crimson Text', serif; color: var(--moonlight-silver); font-size: 1.4rem; margin-bottom: 0.5rem; font-weight: 600;">AuthorFlow Studio</h3>
-                        <p style="font-family: 'Inter', sans-serif; font-size: 0.875rem; opacity: 0.9; font-weight: 300;">Project demo video</p>
-                    </div>
-                    <!-- 
-                    TO ADD VIDEO: Replace placeholder div above with:
-                    <iframe src="https://www.loom.com/embed/YOUR_VIDEO_ID" 
-                            frameborder="0" allowfullscreen
-                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                    </iframe>
-                    -->
-                </div>
-                <div class="project-content">
-                    <h3>AuthorFlow Studio</h3>
-                    <p>AI audiobook generation platform for self-published authors. <strong>Built by an author (me!), for authors.</strong> Born from frustration while writing "Eclipse of Fire & Wings" — I needed this tool, so I built it. Full brand identity, UI/UX design, and development. 90% cost reduction for independent authors. <strong>Part of Pagade Ventures.</strong></p>
-                    <div class="tech-stack">
-                        <span>React</span>
-                        <span>Python</span>
-                        <span>TTS AI</span>
-                        <span>Audio Processing</span>
-                        <span>Stripe</span>
-                    </div>
-                    <p style="font-weight: 700; color: var(--twilight-purple); margin-top: 1rem; font-size: 1.1rem;">
-                        90% Cost Reduction | Authors Empowered | Built By An Author
-                    </p>
-                </div>
-            </div>
-            
-            <div class="project-card hover-lift">
-                <!-- VIDEO PLACEHOLDER - Legendary Learn Demo -->
-                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; background: linear-gradient(135deg, var(--starlight), var(--mermaid-teal)); border-radius: 12px 12px 0 0; border: 1px solid var(--deep-ocean);">
-                    <div id="legendarylearn-video-placeholder" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--deep-ocean); text-align: center; padding: 2rem;">
-                        <div style="width: 60px; height: 60px; border-radius: 50%; background: rgba(27, 73, 101, 0.15); display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; border: 2px solid var(--deep-ocean);">
-                            <div style="width: 0; height: 0; border-left: 20px solid var(--deep-ocean); border-top: 12px solid transparent; border-bottom: 12px solid transparent; margin-left: 6px;"></div>
+                        <div class="project-overlay">
+                            <span class="view-details">View Project Details</span>
                         </div>
-                        <h3 style="font-family: 'Crimson Text', serif; color: var(--deep-ocean); font-size: 1.4rem; margin-bottom: 0.5rem; font-weight: 600;">Legendary Learn</h3>
-                        <p style="font-family: 'Inter', sans-serif; font-size: 0.875rem; opacity: 0.8; font-weight: 300;">Project demo video</p>
                     </div>
-                    <!-- 
-                    TO ADD VIDEO: Replace placeholder div above with:
-                    <iframe src="https://www.loom.com/embed/YOUR_VIDEO_ID" 
-                            frameborder="0" allowfullscreen
-                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                    </iframe>
-                    -->
-                </div>
-                <div class="project-content">
-                    <h3>Legendary Learn</h3>
-                    <p>Quest-based coding education platform for visual learners. Proof that creative people CAN code—they just need the right approach. Gamification meets storytelling meets education. <strong>Combines my author storytelling with my technical expertise.</strong> Part of Pagade Ventures.</p>
-                    <div class="tech-stack">
-                        <span>React</span>
-                        <span>EdTech</span>
-                        <span>Gamification</span>
-                        <span>UI/UX</span>
-                        <span>Storytelling</span>
+                    <div class="project-content">
+                        <h3 itemprop="name">Healthcare Patient Portal</h3>
+                        <p itemprop="description">Secure patient portal with appointment scheduling, medical records access, and provider messaging. HIPAA-compliant architecture with modern UX designed for patients and providers.</p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Secure authentication & authorization</li>
+                                <li>Appointment scheduling system</li>
+                                <li>Medical records viewer</li>
+                                <li>Provider messaging (HIPAA-compliant)</li>
+                                <li>Mobile-responsive design</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">JWT Auth</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric"><span class="metric-icon">✓</span><span>HIPAA Compliant</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>Secure Messaging</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>Mobile Responsive</span></div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#contact" class="btn-project">Build This For Me</a>
+                        </div>
                     </div>
-                    <p style="font-weight: 700; color: var(--mermaid-teal); margin-top: 1rem; font-size: 1.1rem;">
-                        Visual Learning | Story-Driven | Creative + Technical
-                    </p>
-                </div>
+                </article>
+
+                <!-- PROJECT 2: Medical Practice Website (Featured) -->
+                <article class="project-card featured" data-category="websites" itemscope itemtype="https://schema.org/CreativeWork">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="project-image-wrapper">
+                        <div class="project-video">
+                            <iframe data-src="PLACEHOLDER_VIDEO_2" frameborder="0" loading="lazy" allowfullscreen title="Medical Practice Website demo"></iframe>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 itemprop="name">Medical Practice Website</h3>
+                        <p itemprop="description">Professional website for healthcare providers with service showcase, provider profiles, and HIPAA-conscious contact forms. SEO optimized for local search and accessibility compliant.</p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Provider profile pages</li>
+                                <li>Service showcase with details</li>
+                                <li>Secure contact forms</li>
+                                <li>Local SEO optimization</li>
+                                <li>WCAG 2.1 AA accessibility</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Next.js</span>
+                            <span class="tech-badge">Tailwind CSS</span>
+                            <span class="tech-badge">Cloudflare</span>
+                            <span class="tech-badge">Schema.org</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric"><span class="metric-icon">✓</span><span>SEO Optimized</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>Accessible</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>Fast Loading</span></div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#contact" class="btn-project">Get Started</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 3: Client Onboarding Dashboard -->
+                <article class="project-card" data-category="dashboards" itemscope itemtype="https://schema.org/CreativeWork">
+                    <div class="project-image-wrapper">
+                        <div class="project-video">
+                            <iframe data-src="PLACEHOLDER_VIDEO_3" frameborder="0" loading="lazy" allowfullscreen title="Client Onboarding Dashboard demo"></iframe>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 itemprop="name">Client Onboarding Dashboard</h3>
+                        <p itemprop="description">SaaS onboarding platform with automated workflows, progress tracking, and admin management. Built with customer success operations expertise from 15 years in healthcare.</p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Automated workflow engine</li>
+                                <li>Progress tracking dashboards</li>
+                                <li>Email notification system</li>
+                                <li>Admin management panel</li>
+                                <li>Custom reporting</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">Chart.js</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric"><span class="metric-icon">✓</span><span>Automated Workflows</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>Email Integration</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>Custom Reports</span></div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#contact" class="btn-project">Learn More</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 4: Healthcare Analytics Dashboard -->
+                <article class="project-card" data-category="dashboards" itemscope itemtype="https://schema.org/CreativeWork">
+                    <div class="project-image-wrapper">
+                        <div class="project-video">
+                            <iframe data-src="PLACEHOLDER_VIDEO_4" frameborder="0" loading="lazy" allowfullscreen title="Healthcare Analytics Dashboard demo"></iframe>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 itemprop="name">Healthcare Analytics Dashboard</h3>
+                        <p itemprop="description">Real-time analytics for patient outcomes, operational KPIs, and resource utilization. Custom dashboards with role-based access and exportable reports.</p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Real-time metrics</li>
+                                <li>Custom reports & exports</li>
+                                <li>Role-based access</li>
+                                <li>Predictive insights</li>
+                                <li>Secure data pipelines</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Postgres</span>
+                            <span class="tech-badge">Redis</span>
+                            <span class="tech-badge">D3.js</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric"><span class="metric-icon">✓</span><span>Realtime</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>Exportable Reports</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>Predictive Insights</span></div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#contact" class="btn-project">Request Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 5: Telemedicine Interface -->
+                <article class="project-card" data-category="apps" itemscope itemtype="https://schema.org/CreativeWork">
+                    <div class="project-image-wrapper">
+                        <div class="project-video">
+                            <iframe data-src="PLACEHOLDER_VIDEO_5" frameborder="0" loading="lazy" allowfullscreen title="Telemedicine Interface demo"></iframe>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 itemprop="name">Telemedicine Interface</h3>
+                        <p itemprop="description">Secure video visits with scheduling, virtual waiting room, and integrated billing. Optimized for low-bandwidth clinical environments.</p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Low-latency video</li>
+                                <li>Virtual waiting room</li>
+                                <li>Integrated billing</li>
+                                <li>Provider notes & recordings</li>
+                                <li>Mobile-friendly UI</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">WebRTC</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">Stripe</span>
+                            <span class="tech-badge">HIPAA</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric"><span class="metric-icon">✓</span><span>Low Latency</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>Integrated Billing</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>Mobile Ready</span></div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#contact" class="btn-project">Explore Telemedicine</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 6: Appointment Booking System -->
+                <article class="project-card" data-category="apps" itemscope itemtype="https://schema.org/CreativeWork">
+                    <div class="project-image-wrapper">
+                        <div class="project-video">
+                            <iframe data-src="PLACEHOLDER_VIDEO_6" frameborder="0" loading="lazy" allowfullscreen title="Appointment Booking System demo"></iframe>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 itemprop="name">Appointment Booking System</h3>
+                        <p itemprop="description">Scalable appointment platform with availability management, multi-location support, and patient reminders (SMS/Email). Integrates with EHR scheduling APIs.</p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Multi-location scheduling</li>
+                                <li>Automated reminders</li>
+                                <li>Calendar sync</li>
+                                <li>Provider availability rules</li>
+                                <li>Patient self-service</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">GraphQL</span>
+                            <span class="tech-badge">Postgres</span>
+                            <span class="tech-badge">Twilio</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric"><span class="metric-icon">✓</span><span>Automated Reminders</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>Multi-location</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>EHR Integrations</span></div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#contact" class="btn-project">Start Booking</a>
+                        </div>
+                    </div>
+                </article>
+
             </div>
-        </div>
-        
-        <div style="text-align: center; margin-top: 4rem; padding: 3rem; background: var(--starlight); border-radius: 15px; border: 2px solid var(--mermaid-teal);">
-            <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--midnight);">Want to see your project here?</h3>
-            <p style="font-size: 1.2rem; color: #666; margin-bottom: 2rem;">Let's build something legendary together under the moonlight.</p>
-            <a href="#contact" class="btn btn-primary" style="font-size: 1.1rem;">Start Your Project 🌙</a>
+
+            <div class="portfolio-cta" style="text-align:center; margin-top: 3rem;">
+                <a href="#contact" class="btn btn-primary">Want a tailored solution? Let's talk</a>
+            </div>
         </div>
     </section>
 
