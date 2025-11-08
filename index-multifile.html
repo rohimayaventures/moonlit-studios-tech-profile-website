@@ -393,59 +393,107 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services">
-        <h2>Services</h2>
-        <p class="section-subtitle">Professional solutions built to scale.</p>
-        
-        <div class="services-grid">
-            <div class="service-card hover-lift">
-                <div class="icon-circle icon-design" style="width: 50px; height: 50px; margin-bottom: 1rem;"></div>
-                <h3>UI/UX Design</h3>
-                <p class="service-rate">$150-200/hr</p>
-                <p>Healthcare-specific UX patterns, HIPAA-compliant design, accessibility, user research, wireframing, prototyping.</p>
-                <ul>
-                    <li>• User research & journey mapping</li>
-                    <li>• Wireframes & interactive prototypes</li>
-                    <li>• Healthcare-specific UX patterns</li>
-                    <li>• HIPAA-compliant design</li>
-                    <li>• Design systems & brand identity</li>
-                </ul>
+    <section id="services" class="section-padding bg-alternate fade-in-section" role="region" aria-labelledby="services-heading">
+        <div class="container">
+            <h2 id="services-heading" class="section-title">Services & Pricing</h2>
+            <p class="section-intro">Clear pricing. Real results. Healthcare expertise + technical skills.</p>
+            
+            <div class="services-grid">
+                
+                <!-- SERVICE 1 -->
+                <div class="service-card hover-lift" role="article" aria-labelledby="service-1-title">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="12" width="48" height="40" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 20H48M16 28H40M16 36H44" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 id="service-1-title">Healthcare Platform Development</h3>
+                    <p class="service-description">Full-stack web applications for healthcare organizations. Patient portals, provider dashboards, telemedicine platforms built with HIPAA compliance from day one.</p>
+                    
+                    <div class="price-tag">
+                        <span class="starting">Starting at</span>
+                        <span class="price">$5,000</span>
+                    </div>
+                    
+                    <ul class="service-features">
+                        <li><span class="check" aria-hidden="true">✓</span> HIPAA-compliant architecture</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Secure authentication & authorization</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Database design & optimization</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Modern responsive UI</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Post-launch support (30 days)</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Technical documentation</li>
+                    </ul>
+                    
+                    <a href="#contact" class="btn-service" aria-label="Get started with Healthcare Platform Development">Get Started</a>
+                </div>
+                
+                <!-- SERVICE 2 - FEATURED -->
+                <div class="service-card featured hover-lift" role="article" aria-labelledby="service-2-title">
+                    <div class="popular-badge" aria-label="Most popular service">Most Popular</div>
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="8" width="56" height="40" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M4 16H60M20 28H44M24 36H40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 id="service-2-title">Medical Website Design</h3>
+                    <p class="service-description">Professional websites for medical practices, clinics, and healthcare providers. SEO optimized for local search, accessibility compliant, and designed to convert visitors into patients.</p>
+                    
+                    <div class="price-tag">
+                        <span class="starting">Starting at</span>
+                        <span class="price">$2,500</span>
+                    </div>
+                    
+                    <ul class="service-features">
+                        <li><span class="check" aria-hidden="true">✓</span> Custom design (no templates)</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Mobile responsive</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Local SEO optimization</li>
+                        <li><span class="check" aria-hidden="true">✓</span> WCAG 2.1 accessibility</li>
+                        <li><span class="check" aria-hidden="true">✓</span> HIPAA-conscious forms</li>
+                        <li><span class="check" aria-hidden="true">✓</span> 2-3 week delivery</li>
+                    </ul>
+                    
+                    <a href="#contact" class="btn-service btn-popular" aria-label="Start your Medical Website Design project">Start Your Project</a>
+                </div>
+                
+                <!-- SERVICE 3 -->
+                <div class="service-card hover-lift" role="article" aria-labelledby="service-3-title">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="20" r="8" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 52C16 42 22 36 32 36C42 36 48 42 48 52" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M44 24L52 16M52 24L44 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 id="service-3-title">Healthcare Tech Consulting</h3>
+                    <p class="service-description">Technical consulting for healthcare tech companies. Customer success operations, workflow optimization, compliance guidance, and technical strategy from someone who's built healthcare systems.</p>
+                    
+                    <div class="price-tag">
+                        <span class="hourly">Hourly Rate</span>
+                        <span class="price">$150-200</span>
+                    </div>
+                    
+                    <ul class="service-features">
+                        <li><span class="check" aria-hidden="true">✓</span> Operations strategy</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Customer success design</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Workflow optimization</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Technical documentation</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Team training & coaching</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Healthcare compliance review</li>
+                    </ul>
+                    
+                    <a href="#contact" class="btn-service" aria-label="Book a Healthcare Tech Consulting session">Book Consultation</a>
+                </div>
+                
             </div>
             
-            <div class="service-card featured hover-lift">
-                <span style="position: absolute; top: 1rem; right: 1rem; background: var(--lunar-gold); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 700; color: var(--midnight);">MOST POPULAR</span>
-                <div class="icon-circle icon-code" style="width: 50px; height: 50px; margin-bottom: 1rem;"></div>
-                <h3>Full-Stack Development</h3>
-                <p class="service-rate">$175-250/hr</p>
-                <p>I design it AND build it. React, Node, Python, databases, deployment. Complete applications from idea to launch.</p>
-                <ul>
-                    <li>• React/Next.js applications</li>
-                    <li>• Backend APIs & databases</li>
-                    <li>• Cloud deployment (AWS, Vercel, Cloudflare)</li>
-                    <li>• Responsive, mobile-first design</li>
-                    <li>• Performance optimization</li>
-                </ul>
+            <div class="retainer-option fade-in-section">
+                <h3>Monthly Retainers Available</h3>
+                <p>Ongoing development and support: <strong>$3,000-10,000/month</strong> depending on scope. Perfect for healthcare organizations needing continuous development, maintenance, and strategic support.</p>
+                <a href="#contact" class="btn-secondary" aria-label="Discuss monthly retainer options">Discuss Retainer</a>
             </div>
-            
-            <div class="service-card hover-lift">
-                <div class="icon-circle icon-healthcare" style="width: 50px; height: 50px; margin-bottom: 1rem;"></div>
-                <h3>Healthcare Tech Consulting</h3>
-                <p class="service-rate">$200-300/hr</p>
-                <p>Operations optimization, customer success strategy, B2B partnerships. 15+ years of real-world healthcare expertise.</p>
-                <ul>
-                    <li>• Clinical workflow optimization</li>
-                    <li>• Operations & process improvement</li>
-                    <li>• Customer success strategy</li>
-                    <li>• B2B healthcare partnerships</li>
-                    <li>• Regulatory compliance guidance</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: linear-gradient(135deg, var(--mermaid-teal), var(--deep-ocean)); border-radius: 15px; color: white;">
-            <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: white;">Retainer Options Available</h3>
-            <p style="font-size: 1.1rem; margin-bottom: 1rem;"><strong>Standard:</strong> $3K-5K/month (20 hours)</p>
-            <p style="font-size: 1.1rem;"><strong>Premium:</strong> $6K-10K/month (40 hours) • Priority access and dedicated support</p>
         </div>
     </section>
 
@@ -738,41 +786,129 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" style="text-align: center; background: linear-gradient(135deg, rgba(42, 42, 42, 0.05), rgba(107, 124, 89, 0.05)); padding: 5rem 2rem; border-radius: 20px;">
-        <h2>Let's Work Together</h2>
-        <p class="section-subtitle">Ready to discuss your project?</p>
-        
-        <div style="max-width: 600px; margin: 0 auto;">
-            <p style="font-size: 1.2rem; line-height: 1.8; color: #666; margin-bottom: 2rem;">
-                Healthcare tech platforms, patient portals, medical practice websites, or full-stack applications. Let's build something that works.
-            </p>
+    <section id="contact" class="section-padding fade-in-section" role="region" aria-labelledby="contact-heading">
+        <div class="container">
+            <h2 id="contact-heading" class="section-title">Let's Build Something Amazing</h2>
             
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
-                                <a href="mailto:hannah@moonlitstudios.com" class="btn btn-primary" style="font-size: 1.2rem;">
-                    Email Me
-                </a>
-                <a href="https://linkedin.com/in/hannah-pagade" target="_blank" class="btn btn-secondary" style="font-size: 1.2rem;">
-                    Connect on LinkedIn
-                </a>
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Ready to build your healthcare platform? Have questions about a project? Let's talk.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <div class="contact-icon" aria-hidden="true">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:hannah.pagade@gmail.com" aria-label="Send email to hannah.pagade@gmail.com">hannah.pagade@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon" aria-hidden="true">📍</div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Westminster, Colorado<br>Available for remote projects nationwide</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon" aria-hidden="true">💼</div>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/hannah-pagade" target="_blank" rel="noopener noreferrer" aria-label="Connect with Hannah on LinkedIn (opens in new tab)">Connect with me</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="availability">
+                        <h4>Current Availability</h4>
+                        <p class="status" role="status" aria-live="polite"><span aria-hidden="true">✓</span> Accepting new projects</p>
+                        <p>Typical response time: 24 hours</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm" aria-label="Contact form">
+                        <div class="form-group">
+                            <label for="name">Your Name <span aria-label="required">*</span></label>
+                            <input type="text" id="name" name="name" required aria-required="true" autocomplete="name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address <span aria-label="required">*</span></label>
+                            <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="organization">Organization</label>
+                            <input type="text" id="organization" name="organization" autocomplete="organization">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="project-type">Project Type <span aria-label="required">*</span></label>
+                            <select id="project-type" name="project-type" required aria-required="true">
+                                <option value="">Select a service</option>
+                                <option value="healthcare-platform">Healthcare Platform Development</option>
+                                <option value="medical-website">Medical Website Design</option>
+                                <option value="consulting">Healthcare Tech Consulting</option>
+                                <option value="other">Other / Not Sure</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget</option>
+                                <option value="2500-5000">$2,500 - $5,000</option>
+                                <option value="5000-10000">$5,000 - $10,000</option>
+                                <option value="10000+">$10,000+</option>
+                                <option value="flexible">Flexible / Discuss</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Tell me about your project <span aria-label="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit" aria-label="Send your message">Send Message</button>
+                        <div class="form-status" role="status" aria-live="polite" aria-atomic="true"></div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div style="max-width: 800px; margin: 0 auto;">
-            <h3 style="font-size: 1.8rem; margin-bottom: 1rem; color: white;">Moonlit Studios</h3>
-            <p class="footer-motto">Strategic Design. Technical Excellence. Operational Precision.</p>
-            <p style="margin: 2rem 0; font-size: 1.1rem;">
-                <a href="mailto:hannah@moonlitstudios.com">hannah@moonlitstudios.com</a> •
-                <a href="https://linkedin.com/in/hannah-pagade" target="_blank">LinkedIn</a> •
-                <a href="https://github.com/rohimayaventures" target="_blank">GitHub</a>
-            </p>
-            <p style="opacity: 0.8; font-size: 0.95rem; line-height: 1.6;">
-                © 2025 Moonlit Studios | Hannah Pagade<br>
-                UI/UX Designer • Full-Stack Developer • Healthcare Tech Consultant<br>
-                Westminster, Colorado
-            </p>
+    <footer role="contentinfo" aria-label="Site footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Moonlit Studios</h3>
+                    <p>The Nurse Who Can Code</p>
+                </div>
+                
+                <nav class="footer-links" aria-label="Footer navigation">
+                    <h4>Quick Links</h4>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <a href="https://www.linkedin.com/in/hannah-pagade" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn (opens in new tab)">LinkedIn</a>
+                    <a href="mailto:hannah.pagade@gmail.com" aria-label="Send email">Email</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hannah Pagade | Moonlit Studios. All rights reserved.</p>
+                <p>Built with precision. Designed with purpose. Healthcare expertise meets technical excellence.</p>
+            </div>
         </div>
     </footer>
 
