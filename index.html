@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hannah Pagade | UI/UX & Website Designer - Moonlit Studios</title>
-    <meta name="description" content="Hannah Pagade - Freelance UI/UX and Website Designer at Moonlit Studios. Creating beautiful, user-centered digital experiences for technology professionals.">
-    <meta name="keywords" content="UI/UX Designer, Website Designer, Freelance Designer, Moonlit Studios, Hannah Pagade, Web Development, Brand Identity">
+    <title>Moonlit Studios | Hannah Pagade - The CEO Who Codes 🌙 Healthcare UI/UX Designer & Full-Stack Developer</title>
+    <meta name="description" content="Hannah Pagade - The CEO Who Codes. Former clinical director turned published author turned AI CEO. Where Healthcare Meets Creativity Meets Technology. UI/UX Design ($100-150/hr), Full-Stack Development ($125-175/hr), Healthcare Tech Consulting ($150-200/hr).">
+    <meta name="keywords" content="Healthcare UX Design, Clinical Software Design, Full-Stack Developer, Healthcare AI, Hannah Pagade, Moonlit Studios, Healthcare Technology, Published Author, AI CEO, HIPAA Compliant Design">
     <meta name="author" content="Hannah Pagade">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://moonlit-studios-tech-profile-website.pages.dev/">
-    <meta property="og:title" content="Hannah Pagade | UI/UX & Website Designer - Moonlit Studios">
-    <meta property="og:description" content="Freelance UI/UX and Website Designer creating beautiful, user-centered digital experiences. Specializing in executive tech profile websites.">
+    <meta property="og:title" content="Hannah Pagade - The CEO Who Codes | Moonlit Studios">
+    <meta property="og:description" content="Where Healthcare Meets Creativity Meets Technology. Former clinical director, published author, AI CEO. Healthcare UI/UX Design, Full-Stack Development, AI Solutions.">
     <meta property="og:image" content="https://moonlit-studios-tech-profile-website.pages.dev/og-image.jpg">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://moonlit-studios-tech-profile-website.pages.dev/">
-    <meta property="twitter:title" content="Hannah Pagade | UI/UX & Website Designer - Moonlit Studios">
-    <meta property="twitter:description" content="Freelance UI/UX and Website Designer creating beautiful, user-centered digital experiences.">
+    <meta property="twitter:title" content="Hannah Pagade - The CEO Who Codes | Moonlit Studios">
+    <meta property="twitter:description" content="Where Healthcare Meets Creativity Meets Technology 🦚 Clinical director → Author → AI CEO">
     <meta property="twitter:image" content="https://moonlit-studios-tech-profile-website.pages.dev/twitter-card.jpg">
     
     <!-- Favicon -->
@@ -1020,26 +1020,82 @@
     
 
     
-/* Floating Chai Cup - Back to Top (Gold Classy Edition) */
-.chai-cup-button {
+/* Moonlit Peacock Button - Scroll to Top 🦚 */
+.moonlit-button {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    width: 65px;
-    height: 65px;
-    background: var(--cream);
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #4A9B9B 0%, #6B4E71 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.15);
+    box-shadow: 0 4px 25px rgba(74, 155, 155, 0.4);
     opacity: 0;
     visibility: hidden;
     transform: translateY(100px);
     transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
     z-index: 1000;
-    border: 2px solid var(--gold);
+    border: none;
+}
+
+.moonlit-button.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.moonlit-button:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 35px rgba(74, 155, 155, 0.6);
+}
+
+.peacock-feather {
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .moonlit-button {
+        width: 60px;
+        height: 60px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .peacock-feather {
+        font-size: 1.8rem !important;
+    }
+}
+
+/* Legacy support - keep old class name working */
+.chai-cup-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #4A9B9B 0%, #6B4E71 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 25px rgba(74, 155, 155, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100px);
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    z-index: 1000;
+    border: none;
 }
 
 .chai-cup-button.visible {
@@ -1049,93 +1105,8 @@
 }
 
 .chai-cup-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.35);
-    border-color: var(--gold);
-    background: var(--off-white);
-}
-
-.chai-cup-button svg {
-    width: 38px;
-    height: 38px;
-    fill: none;
-    stroke: var(--gold);
-    stroke-width: 2.5;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    transition: all 0.3s ease;
-}
-
-.chai-cup-button:hover svg {
-    stroke: var(--gold);
-    transform: scale(1.05);
-}
-
-/* Continuous Rising Steam */
-.steam {
-    position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.steam-line {
-    fill: none;
-    stroke: var(--gold);
-    stroke-width: 2;
-    stroke-linecap: round;
-    opacity: 0;
-    animation: steam-rise-continuous 3s ease-in-out infinite;
-}
-
-.steam-line:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.steam-line:nth-child(2) {
-    animation-delay: 1s;
-}
-
-.steam-line:nth-child(3) {
-    animation-delay: 2s;
-}
-
-@keyframes steam-rise-continuous {
-    0% {
-        opacity: 0;
-        transform: translateY(0) translateX(0);
-    }
-    20% {
-        opacity: 0.6;
-    }
-    40% {
-        opacity: 0.8;
-    }
-    60% {
-        opacity: 0.6;
-    }
-    80% {
-        opacity: 0.3;
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(-25px) translateX(3px);
-    }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-    .chai-cup-button {
-        width: 55px;
-        height: 55px;
-        bottom: 20px;
-        right: 20px;
-    }
-    
-    .chai-cup-button svg {
-        width: 32px;
-        height: 32px;
-    }
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 8px 35px rgba(74, 155, 155, 0.6);
 }
 
     </style>
@@ -1154,54 +1125,89 @@
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <div class="status-badge">Available for Freelance Projects</div>
-            <h1>Hannah Pagade</h1>
-            <p class="title">UI/UX & Website Designer</p>
-            <p class="location">Moonlit Studios | Freelance Designer</p>
-            <p class="description">
-                Welcome to Moonlit Studios! I craft beautiful, user-centered digital experiences that blend 
-                stunning visuals with intuitive functionality. Specializing in UI/UX design and custom website 
-                development, I help businesses and individuals bring their digital visions to life with 
-                accessible, high-performance solutions.
+            <div class="status-badge">🌙 Moonlit Studios</div>
+            <h1>I'm <span style="background: linear-gradient(135deg, var(--gold) 0%, var(--white) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Hannah Pagade</span></h1>
+            <p class="title">The CEO Who Codes</p>
+            <p class="location" style="font-size: 1.3rem; margin-bottom: 2rem;">
+                Where Healthcare Meets Creativity Meets Technology 🦚
             </p>
+            
+            <div class="stats-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; margin: 3rem 0; text-align: center;">
+                <div class="stat-item">
+                    <span class="stat-icon" style="font-size: 2.5rem; display: block; margin-bottom: 0.5rem;">🏥</span>
+                    <div class="stat-number" data-target="10" style="font-size: 3rem; font-weight: 800; background: linear-gradient(135deg, var(--gold) 0%, var(--white) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">10</div>
+                    <div class="stat-label" style="color: #ccc; font-size: 0.95rem; margin-top: 0.5rem;">Years Healthcare</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-icon" style="font-size: 2.5rem; display: block; margin-bottom: 0.5rem;">📚</span>
+                    <div class="stat-number" data-target="4" style="font-size: 3rem; font-weight: 800; background: linear-gradient(135deg, var(--gold) 0%, var(--white) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">4</div>
+                    <div class="stat-label" style="color: #ccc; font-size: 0.95rem; margin-top: 0.5rem;">Books Written</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-icon" style="font-size: 2.5rem; display: block; margin-bottom: 0.5rem;">🚀</span>
+                    <div class="stat-number" data-target="6" style="font-size: 3rem; font-weight: 800; background: linear-gradient(135deg, var(--gold) 0%, var(--white) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">6</div>
+                    <div class="stat-label" style="color: #ccc; font-size: 0.95rem; margin-top: 0.5rem;">Businesses Built</div>
+                </div>
+            </div>
+            
             <div class="cta-buttons">
-                <a href="#about" class="btn btn-primary">Watch My Story</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Book a Moonlit Meeting 🌙</a>
             </div>
         </div>
     </section>
 
     <section id="about" class="about">
         <div class="container">
-            <h2>About Moonlit Studios</h2>
-            <p class="section-subtitle">Where creativity meets functionality under the moonlight</p>
+            <h2>From Bedside to Boardroom to Code 🔥🦚</h2>
+            <p class="section-subtitle">The clinical director who became a fantasy author who became an AI CEO</p>
             
-            <div class="about-video">
-             <!-- Add your video here!
-                 YouTube: <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
-                 Loom: <iframe src="https://www.loom.com/embed/YOUR_LOOM_ID" allowfullscreen></iframe> -->
-                <div class="video-placeholder-about">
-                    <div class="icon">▶</div>
-                    <h3>Introduce Yourself</h3>
-                    <p>Add a short 1-2 minute video introducing your work and design approach.<br>
-                    Showcase a project highlight or a brief walkthrough.</p>
-                </div>
+            <div class="about-content" style="max-width: 900px; margin: 0 auto 4rem;">
+                <p style="font-size: 1.2rem; line-height: 1.9; margin-bottom: 2rem;">
+                    <strong>🏥 Clinical Leadership (2010-2020):</strong> Spent a decade on the frontlines of healthcare—not just treating patients, but leading clinical teams, optimizing workflows, and watching brilliant clinicians struggle with technology that fought them instead of helped them. I saw the gap between what healthcare needed and what tech companies were building. Someone who understood BOTH worlds needed to bridge it.
+                </p>
+                
+                <p style="font-size: 1.2rem; line-height: 1.9; margin-bottom: 2rem;">
+                    <strong>📚 Published Fantasy Author (2022):</strong> While still in healthcare, I wrote what I couldn't say out loud—epic stories of transformation, power, and rising from ashes. Released <em>"Eclipse of Fire & Wings"</em> under pen name Himani Pagade. But here's the twist: I got frustrated with available tools, so I <em>built 7 AI-powered author tools</em> myself. Turns out, when you need something that doesn't exist, you can just... build it. 💡
+                </p>
+                
+                <p style="font-size: 1.2rem; line-height: 1.9; margin-bottom: 2rem;">
+                    <strong>💻 MS Computer Science (2023-2024):</strong> Decided to stop wishing someone would fix healthcare tech and do it myself. Dove deep into AI/ML, full-stack development, and system design. Realized I had a rare combination: <em>clinical expertise + creative storytelling + technical execution</em>. Most people have one. I had all three.
+                </p>
+                
+                <p style="font-size: 1.2rem; line-height: 1.9; margin-bottom: 3rem;">
+                    <strong>🚀 CEO & Founder (2024-Present):</strong> Built <strong>Pagade Ventures</strong>: 6 AI-powered businesses including healthcare AI that reduces clinical handoff time by 80%. Launched <strong>Moonlit Studios</strong> to help other founders, healthcare innovators, and creative entrepreneurs build technology that doesn't just work—it <em>transforms</em>.
+                </p>
             </div>
             
-            <div class="about-content">
-                <p>
-                    Hi, I'm Hannah! I founded Moonlit Studios to help businesses and creatives establish 
-                    their digital presence with thoughtful, beautiful design. With a focus on UI/UX principles 
-                    and modern web technologies, I create experiences that users love and clients are proud of.
+            <div class="trifecta" style="background: var(--cream); padding: 4rem 2rem; border-radius: 12px; margin-top: 3rem;">
+                <h3 style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem; color: var(--black);">The Rare Trifecta ✨</h3>
+                <p style="text-align: center; color: #666; font-size: 1.1rem; margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                    Most freelancers are <strong>EITHER</strong> technical <strong>OR</strong> creative <strong>OR</strong> domain experts. I'm <strong>ALL THREE</strong>.
                 </p>
-                <p>
-                    At Moonlit Studios, every project is approached with fresh eyes and a commitment to quality. 
-                    Whether you need a complete brand identity, a stunning website, or intuitive app interfaces, 
-                    I work closely with you to bring your vision to life while ensuring accessibility, performance, 
-                    and user delight at every touchpoint.
-                </p>
-                <p>
-                    Let's create something beautiful together. 🌙✨
+                
+                <div class="trifecta-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                    <div class="trifecta-card" style="background: var(--white); padding: 2.5rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease;">
+                        <div class="trifecta-icon" style="font-size: 4rem; margin-bottom: 1rem;">🏥</div>
+                        <h4 style="font-size: 1.5rem; color: var(--black); margin-bottom: 1rem;">Healthcare Expertise</h4>
+                        <p style="color: #666; line-height: 1.7;">10 years as clinical director. I understand workflows, HIPAA compliance, regulatory requirements, and what clinicians <em>actually</em> need to save lives—not what tech bros think they need.</p>
+                    </div>
+                    
+                    <div class="trifecta-card" style="background: var(--white); padding: 2.5rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease;">
+                        <div class="trifecta-icon" style="font-size: 4rem; margin-bottom: 1rem;">🎨</div>
+                        <h4 style="font-size: 1.5rem; color: var(--black); margin-bottom: 1rem;">Creative Storytelling</h4>
+                        <p style="color: #666; line-height: 1.7;">Published fantasy romance author with 4 books. I make technology feel <em>human</em> through narrative-driven design. Your users don't want features—they want a journey.</p>
+                    </div>
+                    
+                    <div class="trifecta-card" style="background: var(--white); padding: 2.5rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease;">
+                        <div class="trifecta-icon" style="font-size: 4rem; margin-bottom: 1rem;">💻</div>
+                        <h4 style="font-size: 1.5rem; color: var(--black); margin-bottom: 1rem;">Technical Execution</h4>
+                        <p style="color: #666; line-height: 1.7;">Full-stack developer with MS in CS. I design it, I build it, I ship it. No handoffs. No "lost in translation" moments. No excuses. Just results.</p>
+                    </div>
+                </div>
+                
+                <p style="text-align: center; font-size: 1.3rem; margin-top: 3rem; font-weight: 600; color: var(--gold); font-style: italic;">
+                    "Where the Phoenix Rises and the Peacock Dances" 🔥🦚
                 </p>
             </div>
         </div>
@@ -1209,68 +1215,71 @@
 
     <section id="experience" class="experience">
         <div class="container">
-            <h2>Services & Expertise</h2>
-            <p class="section-subtitle">What Moonlit Studios offers</p>
+            <h2>Services That Shine 💎</h2>
+            <p class="section-subtitle">Classy, not flashy. Elegant solutions that actually work.</p>
             
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>UI/UX Design</h3>
-                        <div class="company">User-Centered Digital Experiences</div>
-                        <div class="duration">Wireframing • Prototyping • User Research</div>
+                        <h3>🎨 UI/UX Design</h3>
+                        <div class="company" style="color: var(--gold); font-size: 1.5rem; font-weight: 800;">$100-150/hr</div>
+                        <div class="duration">User Research • Wireframing • Prototyping • Design Systems</div>
                         <ul>
-                            <li>User research and persona development to inform design decisions</li>
-                            <li>Wireframing and interactive prototyping in Figma and Adobe XD</li>
-                            <li>Responsive design systems that scale across devices</li>
-                            <li>Usability testing and iterative design improvements</li>
+                            <li>Beautiful, user-centered design for healthcare tech, author platforms, and creative businesses</li>
+                            <li>Wireframing and interactive prototyping in Figma</li>
+                            <li>Brand identity design with narrative-driven approach</li>
+                            <li>Healthcare-specific UX patterns (HIPAA-compliant interfaces)</li>
+                            <li>User research and journey mapping</li>
                         </ul>
                     </div>
                     <div class="timeline-dot"></div>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Website Design & Development</h3>
-                        <div class="company">Custom Digital Solutions</div>
-                        <div class="duration">HTML/CSS • JavaScript • Responsive Design</div>
+                    <div class="timeline-content" style="border: 3px solid var(--gold); position: relative;">
+                        <div style="position: absolute; top: -15px; left: 20px; background: var(--gold); color: var(--black); padding: 0.4rem 1.2rem; border-radius: 20px; font-weight: 700; font-size: 0.85rem;">⭐ MOST POPULAR</div>
+                        <h3>💻 Full-Stack Development</h3>
+                        <div class="company" style="color: var(--gold); font-size: 1.5rem; font-weight: 800;">$125-175/hr</div>
+                        <div class="duration">React • Node.js • Python • Cloud Deployment</div>
                         <ul>
-                            <li>Custom website design and development from concept to launch</li>
-                            <li>Modern, mobile-first responsive layouts that work on all devices</li>
-                            <li>Performance optimization for fast loading and smooth interactions</li>
-                            <li>SEO-friendly structure and accessibility best practices</li>
+                            <li><strong>I design it AND build it.</strong> Complete web applications from idea to launch.</li>
+                            <li>React/Next.js front-end applications</li>
+                            <li>Backend APIs, databases, authentication</li>
+                            <li>Cloudflare/Vercel deployment and optimization</li>
+                            <li>Responsive, mobile-first, fast as lightning ⚡</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-dot" style="background: var(--gold); width: 24px; height: 24px;"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>🏥 Healthcare Tech Consulting</h3>
+                        <div class="company" style="color: var(--gold); font-size: 1.5rem; font-weight: 800;">$150-200/hr</div>
+                        <div class="duration">Clinical Workflows • HIPAA • Provider Tools</div>
+                        <ul>
+                            <li><strong>I've seen healthcare tech fail in real time.</strong> Let's build tech that actually helps clinicians save lives.</li>
+                            <li>Clinical workflow optimization and analysis</li>
+                            <li>HIPAA-compliant design and architecture</li>
+                            <li>Patient portal UX and provider tool design</li>
+                            <li>Healthcare AI implementation strategy</li>
+                            <li>Regulatory compliance guidance</li>
                         </ul>
                     </div>
                     <div class="timeline-dot"></div>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Brand Identity & Visual Design</h3>
-                        <div class="company">Creative Visual Solutions</div>
-                        <div class="duration">Branding • Typography • Color Theory</div>
+                    <div class="timeline-content" style="background: linear-gradient(135deg, var(--cream) 0%, var(--off-white) 100%); border: 2px solid var(--olive);">
+                        <h3>🌙 Monthly Retainers</h3>
+                        <div class="company" style="color: var(--olive); font-weight: 700;">Need Ongoing Support?</div>
+                        <div class="duration">Priority Access • Faster Turnaround • Dedicated Support</div>
                         <ul>
-                            <li>Brand identity development including logos and style guides</li>
-                            <li>Typography selection and visual hierarchy design</li>
-                            <li>Color palette creation based on psychology and accessibility</li>
-                            <li>Marketing materials and social media graphics</li>
+                            <li><strong>Moonlit Retainer:</strong> $3K-5K/month • 20 hours per month of design + development + consulting. Perfect for startups who need consistent support.</li>
+                            <li><strong>Full Moon Retainer:</strong> $6K-10K/month • 40 hours per month. Priority access, faster turnaround, dedicated Slack channel. For businesses ready to scale fast.</li>
                         </ul>
                     </div>
-                    <div class="timeline-dot"></div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>Consulting & Strategy</h3>
-                        <div class="company">Digital Transformation</div>
-                        <div class="duration">UX Audits • Design Systems • Consultation</div>
-                        <ul>
-                            <li>UX audits and recommendations for existing products</li>
-                            <li>Design system creation for consistent brand experience</li>
-                            <li>Strategic consultation on digital presence and user experience</li>
-                            <li>Ongoing support and design iterations post-launch</li>
-                        </ul>
-                    </div>
-                    <div class="timeline-dot"></div>
+                    <div class="timeline-dot" style="background: var(--olive);"></div>
                 </div>
             </div>
         </div>
@@ -1278,96 +1287,100 @@
 
     <section id="projects" class="projects">
         <div class="container">
-            <h2>Featured Work</h2>
-            <p class="section-subtitle">Recent projects from Moonlit Studios</p>
+            <h2>Work That Transforms ✨</h2>
+            <p class="section-subtitle">Real projects. Real impact. Real results.</p>
             
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-video">
-                        <div class="video-placeholder">
-                            <div class="video-placeholder-icon">▶</div>
-                            <div>Add Demo Video<br><small>(YouTube/Loom)</small></div>
+                    <div class="project-video" style="background: linear-gradient(135deg, #4A9B9B 0%, #1B4965 100%); display: flex; align-items: center; justify-content: center; color: white; padding: 3rem; text-align: center;">
+                        <div>
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">🏥</div>
+                            <h4 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Healthcare AI Platform</h4>
+                            <p style="opacity: 0.9;">Clinical workflow transformation</p>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Your Project Title Here</h3>
+                        <h3>Healthcare AI Solutions</h3>
                         <p class="description">
-                            Replace this with your project description. Explain the problem you solved, 
-                            the design approach you took, and the results achieved. Include key features 
-                            and what makes this project special.
+                            Designed and built clinical handoff platform that reduces patient transfer time by 80%. 
+                            From user research and wireframes to full-stack implementation. HIPAA-compliant, 
+                            AI-powered, and actually used by real clinicians saving real lives.
                         </p>
                         <div class="tech-stack">
-                            <span class="tech-tag">Figma</span>
-                            <span class="tech-tag">HTML/CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Responsive</span>
-                        </div>
-                        <div class="project-actions">
-                            <a href="https://github.com/example/your-project" class="action-btn primary" target="_blank">
-                                <span>View Code</span>
-                            </a>
-                            <a href="#contact" class="action-btn"><span>Live Demo</span></a>
-                            <a href="#contact" class="action-btn"><span>Documentation</span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-video">
-                        <div class="video-placeholder">
-                            <div class="video-placeholder-icon">▶</div>
-                            <div>Add Demo Video<br><small>(YouTube/Loom)</small></div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Your Project Title Here</h3>
-                        <p class="description">
-                            Add your second project here. Showcase your design process, the challenges 
-                            you overcame, and the final results. Include metrics like conversion rate 
-                            improvements or user satisfaction scores if available.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Adobe XD</span>
                             <span class="tech-tag">React</span>
-                            <span class="tech-tag">UI Design</span>
-                            <span class="tech-tag">Mobile First</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">AI/ML</span>
+                            <span class="tech-tag">Healthcare</span>
+                            <span class="tech-tag">HIPAA</span>
                         </div>
-                        <div class="project-actions">
-                            <a href="https://github.com/example/your-project-2" class="action-btn primary" target="_blank">
-                                <span>View Code</span>
-                            </a>
-                            <a href="#contact" class="action-btn"><span>Case Study</span></a>
-                            <a href="#contact" class="action-btn"><span>Live Demo</span></a>
+                        <div style="margin-top: 1.5rem; padding: 1rem; background: var(--cream); border-radius: 8px;">
+                            <strong style="color: var(--gold); font-size: 1.1rem;">Impact:</strong> 
+                            <span style="color: #666;">80% time reduction • $2-4B market opportunity • Lives saved daily</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-video">
-                        <div class="video-placeholder">
-                            <div class="video-placeholder-icon">▶</div>
-                            <div>Add Demo Video<br><small>(YouTube/Loom)</small></div>
+                    <div class="project-video" style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); display: flex; align-items: center; justify-content: center; color: white; padding: 3rem; text-align: center;">
+                        <div>
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">🎨</div>
+                            <h4 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Creative Business Platforms</h4>
+                            <p style="opacity: 0.9;">Author & artist tools</p>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Your Project Title Here</h3>
+                        <h3>AI-Powered Creative Tools</h3>
                         <p class="description">
-                            Your third featured project goes here. Highlight what makes your work unique - 
-                            whether it's innovative interactions, accessibility excellence, or stunning 
-                            visual design that tells a story.
+                            Built 7+ AI tools for authors, including audiobook generation platforms that reduce 
+                            production costs by 90%. Full brand identity, UI/UX design, and technical implementation. 
+                            Because I'm an author too—I build what I need and what my community needs.
                         </p>
                         <div class="tech-stack">
-                            <span class="tech-tag">Sketch</span>
-                            <span class="tech-tag">WordPress</span>
-                            <span class="tech-tag">Branding</span>
-                            <span class="tech-tag">UX Research</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TTS AI</span>
+                            <span class="tech-tag">Audio Processing</span>
+                            <span class="tech-tag">Stripe</span>
                         </div>
-                        <div class="project-actions">
-                            <a href="#contact" class="action-btn primary"><span>Coming Soon</span></a>
-                            <a href="#contact" class="action-btn"><span>Get Updates</span></a>
+                        <div style="margin-top: 1.5rem; padding: 1rem; background: var(--cream); border-radius: 8px;">
+                            <strong style="color: var(--gold); font-size: 1.1rem;">Impact:</strong> 
+                            <span style="color: #666;">90% cost reduction • Authors empowered • Dreams made affordable</span>
                         </div>
                     </div>
                 </div>
+
+                <div class="project-card">
+                    <div class="project-video" style="background: linear-gradient(135deg, #6B4E71 0%, #4A9B9B 100%); display: flex; align-items: center; justify-content: center; color: white; padding: 3rem; text-align: center;">
+                        <div>
+                            <div style="font-size: 4rem; margin-bottom: 1rem;">🚀</div>
+                            <h4 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Startup MVPs</h4>
+                            <p style="opacity: 0.9;">From concept to launch</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Your Project Could Be Here</h3>
+                        <p class="description">
+                            I help founders, healthcare innovators, and creative entrepreneurs transform ideas into 
+                            shipped products. Design, development, strategy—all under one roof (or should I say, 
+                            under one moon 🌙). No handoffs. No miscommunication. Just execution.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Your Stack</span>
+                            <span class="tech-tag">Your Vision</span>
+                            <span class="tech-tag">Real Results</span>
+                        </div>
+                        <div style="margin-top: 1.5rem; padding: 1rem; background: var(--cream); border-radius: 8px;">
+                            <strong style="color: var(--gold); font-size: 1.1rem;">Let's Build:</strong> 
+                            <span style="color: #666;">Your healthcare platform • Your creative tool • Your big idea</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 4rem; padding: 3rem; background: var(--cream); border-radius: 12px;">
+                <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--black);">Want to see your project here?</h3>
+                <p style="font-size: 1.2rem; color: #666; margin-bottom: 2rem;">Let's build something legendary together under the moonlight.</p>
+                <a href="#contact" class="btn btn-primary" style="display: inline-block;">Start Your Project 🌙</a>
             </div>
         </div>
     </section>
@@ -1497,8 +1510,9 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Moonlit Studios | Hannah Pagade</p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Crafting Beautiful Digital Experiences Under the Moonlight 🌙</p>
+        <p>&copy; 2025 Moonlit Studios | Hannah Pagade - The CEO Who Codes</p>
+        <p style="margin-top: 0.5rem; font-size: 0.95rem; font-weight: 600; color: var(--gold);">🔥🦚 "Where the Phoenix Rises and the Peacock Dances" 🦚🔥</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Built with 🌙 and lots of chai ☕</p>
     </footer>    <script>
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1632,35 +1646,9 @@
 
     </script>
 
-    <!-- Floating Chai Cup - Back to Top -->
-    <button class="chai-cup-button" id="chaiButton" aria-label="Scroll to top">
-        <!-- Animated Steam -->
-        <svg class="steam" width="30" height="25" xmlns="http://www.w3.org/2000/svg">
-            <path class="steam-line" d="M 8 20 Q 8 10, 8 0" />
-            <path class="steam-line" d="M 15 20 Q 15 10, 15 0" />
-            <path class="steam-line" d="M 22 20 Q 22 10, 22 0" />
-        </svg>
-        
-        <!-- Chai Cup SVG -->
-        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <!-- Cup body -->
-            <path d="M 6 6 L 8 18 C 8 19 9 20 10 20 L 14 20 C 15 20 16 19 16 18 L 18 6 Z" 
-                  fill="rgba(255,255,255,0.2)" 
-                  stroke="white" 
-                  stroke-width="2"/>
-            
-            <!-- Handle -->
-            <path d="M 18 8 Q 22 8, 22 12 Q 22 16, 18 16" 
-                  fill="none" 
-                  stroke="white" 
-                  stroke-width="2"/>
-            
-            <!-- Rim -->
-            <ellipse cx="12" cy="6" rx="6" ry="1.5" 
-                     fill="rgba(255,255,255,0.3)" 
-                     stroke="white" 
-                     stroke-width="2"/>
-        </svg>
+    <!-- Moonlit Peacock Button - Scroll to Top 🦚 -->
+    <button class="moonlit-button" id="chaiButton" aria-label="Scroll to top">
+        <span class="peacock-feather" style="font-size: 2rem; display: block;">🦚</span>
     </button>
 
 
