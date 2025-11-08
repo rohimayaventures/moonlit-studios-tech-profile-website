@@ -819,68 +819,35 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section-padding fade-in-section" role="region" aria-labelledby="contact-heading">
+    <section id="contact" class="section-padding">
         <div class="container">
-            <h2 id="contact-heading" class="section-title">Let's Build Something Amazing</h2>
+            <h2 class="section-title">Let's Build Something Amazing</h2>
+            <p class="section-intro">Ready to bring your healthcare technology vision to life? Let's connect.</p>
             
-            <div class="contact-layout">
-                <div class="contact-info">
-                    <h3>Get In Touch</h3>
-                    <p>Ready to build your healthcare platform? Have questions about a project? Let's talk.</p>
+            <div class="contact-wrapper">
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                     
-                    <div class="contact-methods">
-                        <div class="contact-item">
-                            <div class="contact-icon" aria-hidden="true">📧</div>
-                            <div>
-                                <h4>Email</h4>
-                                <a href="mailto:hannah.pagade@gmail.com" aria-label="Send email to hannah.pagade@gmail.com">hannah.pagade@gmail.com</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon" aria-hidden="true">📍</div>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Westminster, Colorado<br>Available for remote projects nationwide</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon" aria-hidden="true">💼</div>
-                            <div>
-                                <h4>LinkedIn</h4>
-                                <a href="https://www.linkedin.com/in/hannah-pagade" target="_blank" rel="noopener noreferrer" aria-label="Connect with Hannah on LinkedIn (opens in new tab)">Connect with me</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="availability">
-                        <h4>Current Availability</h4>
-                        <p class="status" role="status" aria-live="polite"><span aria-hidden="true">✓</span> Accepting new projects</p>
-                        <p>Typical response time: 24 hours</p>
-                    </div>
-                </div>
-                
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm" aria-label="Contact form">
+                    <div class="form-row">
                         <div class="form-group">
-                            <label for="name">Your Name <span aria-label="required">*</span></label>
-                            <input type="text" id="name" name="name" required aria-required="true" autocomplete="name">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Smith">
                         </div>
                         
                         <div class="form-group">
-                            <label for="email">Email Address <span aria-label="required">*</span></label>
-                            <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@company.com">
                         </div>
-                        
+                    </div>
+                    
+                    <div class="form-row">
                         <div class="form-group">
                             <label for="organization">Organization</label>
-                            <input type="text" id="organization" name="organization" autocomplete="organization">
+                            <input type="text" id="organization" name="organization" placeholder="Your Company Name">
                         </div>
                         
                         <div class="form-group">
-                            <label for="project-type">Project Type <span aria-label="required">*</span></label>
-                            <select id="project-type" name="project-type" required aria-required="true">
+                            <label for="project-type">Project Type *</label>
+                            <select id="project-type" name="project-type" required>
                                 <option value="">Select a service</option>
                                 <option value="healthcare-platform">Healthcare Platform Development</option>
                                 <option value="medical-website">Medical Website Design</option>
@@ -888,26 +855,53 @@
                                 <option value="other">Other / Not Sure</option>
                             </select>
                         </div>
-                        
-                        <div class="form-group">
-                            <label for="budget">Budget Range</label>
-                            <select id="budget" name="budget">
-                                <option value="">Select budget</option>
-                                <option value="2500-5000">$2,500 - $5,000</option>
-                                <option value="5000-10000">$5,000 - $10,000</option>
-                                <option value="10000+">$10,000+</option>
-                                <option value="flexible">Flexible / Discuss</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Tell me about your project <span aria-label="required">*</span></label>
-                            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary btn-submit" aria-label="Send your message">Send Message</button>
-                        <div class="form-status" role="status" aria-live="polite" aria-atomic="true"></div>
-                    </form>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="budget">Budget Range</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget (optional)</option>
+                            <option value="2500-5000">$2,500 - $5,000</option>
+                            <option value="5000-10000">$5,000 - $10,000</option>
+                            <option value="10000+">$10,000+</option>
+                            <option value="flexible">Flexible / Let's Discuss</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Tell me about your project *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Describe your healthcare technology needs, timeline, and any specific requirements..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-form">Send Message</button>
+                    
+                    <p class="form-note">📧 You'll receive a response within 24 hours at <strong>hannah.pagade@gmail.com</strong></p>
+                </form>
+                
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>📧 Email</h3>
+                        <a href="mailto:hannah.pagade@gmail.com">hannah.pagade@gmail.com</a>
+                        <p class="note">Direct professional inbox</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h3>💼 LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/hannah-pagade" target="_blank" rel="noopener">Connect with Hannah</a>
+                        <p class="note">Professional network</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <h3>📍 Location</h3>
+                        <p>Westminster, Colorado</p>
+                        <p class="note">Available for remote projects nationwide</p>
+                    </div>
+                    
+                    <div class="contact-card availability-card">
+                        <h3>✅ Current Availability</h3>
+                        <p class="status-badge">Accepting New Projects</p>
+                        <p class="note">Typical response: 24 hours</p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -864,6 +864,194 @@ section h2 {
 }
 
 /* ========================================
+   FUNCTIONAL CONTACT FORM
+   ======================================== */
+
+/* Contact Wrapper - 2 Column Grid */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    background: linear-gradient(135deg, rgba(27, 73, 101, 0.05), rgba(74, 155, 155, 0.05));
+    padding: 2.5rem;
+    border-radius: 16px;
+    border: 2px solid rgba(74, 155, 155, 0.2);
+    box-shadow: 0 8px 32px rgba(10, 17, 40, 0.3);
+}
+
+/* Form Row - Side by Side Fields */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--lunar-gold);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* Input Fields */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    background: rgba(10, 17, 40, 0.6);
+    border: 2px solid rgba(74, 155, 155, 0.3);
+    border-radius: 8px;
+    color: var(--moonlight-silver);
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(232, 232, 232, 0.5);
+}
+
+/* Focus States */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--mermaid-teal);
+    background: rgba(10, 17, 40, 0.8);
+    box-shadow: 0 0 0 4px rgba(74, 155, 155, 0.1);
+}
+
+/* Textarea Specific */
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* Form Submit Button */
+.btn-form {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+/* Form Note */
+.form-note {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 215, 0, 0.1);
+    border-left: 4px solid var(--lunar-gold);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: var(--moonlight-silver);
+}
+
+.form-note strong {
+    color: var(--lunar-gold);
+}
+
+/* Contact Info Cards */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-card {
+    background: linear-gradient(135deg, rgba(27, 73, 101, 0.1), rgba(74, 155, 155, 0.1));
+    padding: 1.75rem;
+    border-radius: 12px;
+    border: 2px solid rgba(74, 155, 155, 0.2);
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--mermaid-teal);
+    box-shadow: 0 8px 24px rgba(74, 155, 155, 0.2);
+}
+
+.contact-card h3 {
+    color: var(--lunar-gold);
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+}
+
+.contact-card a {
+    color: var(--starlight);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+    color: var(--mermaid-teal);
+    text-decoration: underline;
+}
+
+.contact-card p {
+    color: var(--moonlight-silver);
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+.contact-card .note {
+    font-size: 0.85rem;
+    color: rgba(232, 232, 232, 0.6);
+    margin-top: 0.5rem;
+}
+
+/* Availability Card Special Styling */
+.availability-card {
+    background: linear-gradient(135deg, rgba(74, 155, 155, 0.15), rgba(255, 215, 0, 0.05));
+    border-color: var(--mermaid-teal);
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, var(--mermaid-teal), var(--deep-ocean));
+    color: white;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+/* Mobile Responsive - Stack Columns */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .contact-form {
+        padding: 1.5rem;
+    }
+}
+
+/* ========================================
    EPIC FOOTER
    ======================================== */
 
