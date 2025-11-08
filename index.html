@@ -3,1893 +3,955 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moonlit Studios | Hannah Pagade - The CEO Who Codes 🌙 Healthcare UI/UX Designer & Full-Stack Developer</title>
-    <meta name="description" content="Hannah Pagade - The CEO Who Codes. Former clinical director turned published author turned AI CEO. Where Healthcare Meets Creativity Meets Technology. UI/UX Design ($100-150/hr), Full-Stack Development ($125-175/hr), Healthcare Tech Consulting ($150-200/hr).">
-    <meta name="keywords" content="Healthcare UX Design, Clinical Software Design, Full-Stack Developer, Healthcare AI, Hannah Pagade, Moonlit Studios, Healthcare Technology, Published Author, AI CEO, HIPAA Compliant Design">
+    
+    <!-- PRIMARY META TAGS -->
+    <title>Hannah Pagade | The Nurse Who Can Code | Healthcare Web Developer Denver</title>
+    <meta name="title" content="Hannah Pagade | The Nurse Who Can Code | Healthcare Web Developer">
+    <meta name="description" content="Healthcare operations leader with 15+ years experience now building HIPAA-compliant web applications. Full-stack developer specializing in healthcare technology, patient portals, and medical practice websites in Denver, Colorado.">
+    <meta name="keywords" content="healthcare web developer Denver, medical website design Colorado, HIPAA compliant development, nurse developer, healthcare technology, patient portal development, medical practice websites, healthcare UI/UX, React developer healthcare, healthcare operations consultant">
     <meta name="author" content="Hannah Pagade">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://moonlit-studios.pages.dev/">
     
-    <!-- Open Graph / Facebook -->
+    <!-- OPEN GRAPH / LINKEDIN -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://moonlit-studios-tech-profile-website.pages.dev/">
-    <meta property="og:title" content="Hannah Pagade - The CEO Who Codes | Moonlit Studios">
-    <meta property="og:description" content="Where Healthcare Meets Creativity Meets Technology. Former clinical director, published author, AI CEO. Healthcare UI/UX Design, Full-Stack Development, AI Solutions.">
-    <meta property="og:image" content="https://moonlit-studios-tech-profile-website.pages.dev/og-image.jpg">
+    <meta property="og:url" content="https://moonlit-studios.pages.dev/">
+    <meta property="og:title" content="Hannah Pagade | The Nurse Who Can Code">
+    <meta property="og:description" content="15+ years healthcare operations → Full-stack developer building HIPAA-compliant applications. I understand healthcare because I lived it. Denver-based, available for projects nationwide.">
+    <meta property="og:image" content="https://moonlit-studios.pages.dev/og-image.jpg">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Moonlit Studios - Hannah Pagade">
     
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://moonlit-studios-tech-profile-website.pages.dev/">
-    <meta property="twitter:title" content="Hannah Pagade - The CEO Who Codes | Moonlit Studios">
-    <meta property="twitter:description" content="Where Healthcare Meets Creativity Meets Technology 🦚 Clinical director → Author → AI CEO">
-    <meta property="twitter:image" content="https://moonlit-studios-tech-profile-website.pages.dev/twitter-card.jpg">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌙</text></svg>">
+    <!-- PRECONNECT FOR LIGHTNING SPEED -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        :root {
-            --black: #0A0A0A;
-            --white: #FFFFFF;
-            --off-white: #FAF9F6;
-            --cream: #F5F3EE;
-            --gold: #D4AF37;
-            --olive: #6B7C59;
-            --dark-gray: #2A2A2A;
-            --light-gray: #E8E6E1;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.02); }
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-            line-height: 1.6;
-            color: var(--black);
-            background: var(--off-white);
-            overflow-x: hidden;
-        }
-        
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(10, 10, 10, 0.98);
-            backdrop-filter: blur(10px);
-            padding: 1.5rem 4rem;
-            z-index: 1000;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
-        }
-        
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-        }
-        
-        nav a {
-            color: var(--white);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            letter-spacing: 0.5px;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-        
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--gold);
-            transition: width 0.3s ease;
-        }
-        
-        nav a:hover::after {
-            width: 100%;
-        }
-        
-        section {
-            min-height: 100vh;
-            padding: 8rem 4rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .hero {
-            background: linear-gradient(135deg, var(--black) 0%, var(--dark-gray) 100%);
-            color: var(--white);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 1000px;
-            animation: fadeIn 1s ease-out;
-            will-change: transform, opacity;
-        }
-        
-        .status-badge {
-            display: inline-block;
-            background: linear-gradient(135deg, var(--olive) 0%, #5a6b4a 100%);
-            color: var(--white);
-            padding: 0.6rem 1.8rem;
-            border-radius: 4px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            margin-bottom: 2rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-        }
-        
-        .hero h1 {
-            font-size: 5rem;
-            margin-bottom: 1rem;
-            font-weight: 800;
-            line-height: 1.1;
-            background: linear-gradient(135deg, var(--white) 0%, var(--gold) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .hero .title {
-            font-size: 2rem;
-            color: var(--gold);
-            margin-bottom: 1rem;
-            font-weight: 600;
-        }
-        
-        .hero .location {
-            font-size: 1.2rem;
-            color: var(--olive);
-            margin-bottom: 2rem;
-            font-weight: 500;
-        }
-        
-        .hero .description {
-            font-size: 1.25rem;
-            line-height: 1.8;
-            color: #ccc;
-            margin-bottom: 3rem;
-            max-width: 900px;
-        }
-        
-        .cta-buttons {
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-        }
-        
-        .btn {
-            padding: 1.2rem 3rem;
-            border: none;
-            border-radius: 4px;
-            font-size: 1rem;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transition: left 0.5s;
-        }
-        
-        .btn:hover::before {
-            left: 100%;
-        }
-        
-        .btn-primary {
-            background: var(--gold);
-            color: var(--black);
-            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
-        }
-        
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
-        }
-        
-        .btn-secondary {
-            background: transparent;
-            color: var(--white);
-            border: 2px solid var(--gold);
-        }
-        
-        .btn-secondary:hover {
-            background: var(--gold);
-            color: var(--black);
-            transform: translateY(-3px);
-        }
-        
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            width: 100%;
-        }
-        
-        h2 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            text-align: center;
-            font-weight: 800;
-            letter-spacing: -1px;
-            color: var(--black);
-        }
-        
-        h2::after {
-            content: '';
-            display: block;
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(90deg, var(--gold) 0%, var(--olive) 100%);
-            margin: 1.5rem auto 3rem;
-        }
-        
-        .section-subtitle {
-            text-align: center;
-            color: #666;
-            font-size: 1.3rem;
-            margin-bottom: 5rem;
-            font-weight: 400;
-        }
-        
-        /* ABOUT SECTION */
-        .about {
-            background: var(--off-white);
-        }
-        
-        .about-video {
-            max-width: 900px;
-            margin: 0 auto 3rem;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-        }
-        
-        .about-video iframe {
-            width: 100%;
-            height: 500px;
-            border: none;
-        }
-        
-        .video-placeholder-about {
-            background: linear-gradient(135deg, var(--dark-gray) 0%, var(--black) 100%);
-            color: var(--gold);
-            padding: 4rem;
-            text-align: center;
-            min-height: 500px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .video-placeholder-about .icon {
-            font-size: 5rem;
-            margin-bottom: 2rem;
-            opacity: 0.5;
-        }
-        
-        .video-placeholder-about h3 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: var(--gold);
-        }
-        
-        .about-content {
-            max-width: 800px;
-            margin: 0 auto;
-            background: var(--white);
-            padding: 3rem;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-        }
-        
-        .about-content p {
-            font-size: 1.1rem;
-            line-height: 1.9;
-            color: #666;
-            margin-bottom: 1.5rem;
-        }
-        
-        /* EXPERIENCE SECTION */
-        .experience {
-            background: var(--cream);
-        }
-        
-        .timeline {
-            position: relative;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 2px;
-            height: 100%;
-            background: linear-gradient(180deg, var(--gold) 0%, var(--olive) 100%);
-        }
-        
-        .timeline-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 4rem;
-            position: relative;
-        }
-        
-        .timeline-item:nth-child(odd) {
-            flex-direction: row-reverse;
-        }
-        
-        .timeline-content {
-            width: 45%;
-            background: var(--white);
-            padding: 2.5rem;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            border: 2px solid var(--light-gray);
-            transition: all 0.3s ease;
-        }
-        
-        .timeline-content:hover {
-            border-color: var(--gold);
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
-        }
-        
-        .timeline-dot {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 20px;
-            height: 20px;
-            background: var(--gold);
-            border-radius: 50%;
-            border: 4px solid var(--off-white);
-            z-index: 10;
-        }
-        
-        .timeline-content h3 {
-            font-size: 1.8rem;
-            color: var(--black);
-            margin-bottom: 0.5rem;
-        }
-        
-        .timeline-content .company {
-            font-size: 1.3rem;
-            color: var(--olive);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-        
-        .timeline-content .duration {
-            font-size: 1rem;
-            color: #999;
-            margin-bottom: 1.5rem;
-        }
-        
-        .timeline-content ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .timeline-content li {
-            color: #666;
-            line-height: 1.8;
-            margin-bottom: 0.5rem;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-        
-        .timeline-content li::before {
-            content: '▸';
-            position: absolute;
-            left: 0;
-            color: var(--gold);
-            font-weight: bold;
-        }
-        
-        /* PROJECTS SECTION */
-        .projects {
-            background: var(--off-white);
-        }
-        
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 3rem;
-        }
-        
-        .project-card {
-            background: var(--white);
-            border: 2px solid var(--light-gray);
-            border-radius: 12px;
-            overflow: hidden;
-            transition: all 0.4s ease, transform 0.1s;
-            position: relative;
-            transform-style: preserve-3d;
-            will-change: transform;
-        }
-        
-        .project-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, var(--gold) 0%, var(--olive) 100%);
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-        }
-        
-        .project-card:hover::before {
-            transform: scaleX(1);
-        }
-        
-        .project-card:hover {
-            border-color: var(--gold);
-            transform: translateY(-10px);
-            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-        }
-        
-        .project-video {
-            width: 100%;
-            height: 250px;
-            background: linear-gradient(135deg, var(--dark-gray) 0%, var(--black) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-bottom: 2px solid var(--light-gray);
-        }
-        
-        .project-video iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        
-        .video-placeholder {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-            padding: 2rem;
-            text-align: center;
-            color: var(--gold);
-        }
-        
-        .video-placeholder-icon {
-            font-size: 3rem;
-            opacity: 0.5;
-        }
-        
-        .project-content {
-            padding: 2.5rem;
-        }
-        
-        .project-card h3 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            color: var(--black);
-            font-weight: 700;
-        }
-        
-        .project-card .description {
-            color: #666;
-            margin-bottom: 2rem;
-            font-size: 1.05rem;
-            line-height: 1.8;
-        }
-        
-        .tech-stack {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.7rem;
-            margin-bottom: 2rem;
-        }
-        
-        .tech-tag {
-            background: var(--olive);
-            color: var(--white);
-            padding: 0.5rem 1.1rem;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            transition: all 0.3s ease;
-        }
-        
-        .tech-tag:hover {
-            background: var(--gold);
-            color: var(--black);
-            transform: translateY(-2px);
-        }
-        
-        .project-actions {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-        
-        .action-btn {
-            flex: 1;
-            min-width: 140px;
-            padding: 1rem 1.5rem;
-            border: 2px solid var(--black);
-            background: var(--white);
-            color: var(--black);
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 0.95rem;
-            text-align: center;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .action-btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: var(--black);
-            transition: left 0.3s ease;
-            z-index: 0;
-        }
-        
-        .action-btn span {
-            position: relative;
-            z-index: 1;
-        }
-        
-        .action-btn:hover::before {
-            left: 0;
-        }
-        
-        .action-btn:hover {
-            color: var(--white);
-            transform: translateY(-2px);
-        }
-        
-        .action-btn.primary {
-            background: var(--gold);
-            border-color: var(--gold);
-            color: var(--black);
-        }
-        
-        .action-btn.primary::before {
-            background: var(--olive);
-        }
-        
-        .action-btn.primary:hover {
-            color: var(--white);
-        }
-        
-        /* SKILLS WIREFRAME */
-        .skills {
-            background: var(--cream);
-        }
-        
-        .skills-wireframe {
-            position: relative;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 0;
-        }
-        
-        .wireframe-connections {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 0;
-        }
-        
-        .skills-tier {
-            position: relative;
-            z-index: 1;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 2.5rem;
-            margin-bottom: 4rem;
-        }
-        
-        .tier-label {
-            text-align: center;
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--olive);
-            margin-bottom: 2rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        
-        .skill-node {
-            background: var(--white);
-            border: 3px solid var(--light-gray);
-            border-radius: 12px;
-            padding: 2rem 2.5rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            position: relative;
-            min-width: 220px;
-            text-align: center;
-        }
-        
-        .skill-node.core {
-            border-color: var(--gold);
-            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.25);
-        }
-        
-        .skill-node.advanced {
-            border-color: var(--olive);
-        }
-        
-        .skill-node:hover {
-            transform: translateY(-8px) scale(1.05);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-            border-color: var(--gold);
-        }
-        
-        .skill-node h3 {
-            font-size: 1.5rem;
-            color: var(--black);
-            margin-bottom: 0.5rem;
-        }
-        
-        .skill-level {
-            font-size: 0.9rem;
-            color: var(--olive);
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .skill-description {
-            display: none;
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 2px solid var(--light-gray);
-            color: #666;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            text-align: left;
-        }
-        
-        .skill-node.active .skill-description {
-            display: block;
-            animation: fadeIn 0.3s ease-out;
-        }
-        
-        /* CONTACT */
-        .contact {
-            background: linear-gradient(135deg, var(--black) 0%, var(--dark-gray) 100%);
-            color: var(--white);
-            text-align: center;
-        }
-        
-        .contact h2 {
-            color: var(--white);
-        }
-        
-        .contact .intro {
-            font-size: 1.4rem;
-            margin-bottom: 3rem;
-            color: #ccc;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .contact-links {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        
-        .contact-link {
-            color: var(--white);
-            text-decoration: none;
-            font-size: 1.2rem;
-            padding: 1.2rem 2.5rem;
-            border: 2px solid var(--gold);
-            border-radius: 4px;
-            font-weight: 700;
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .contact-link::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: var(--gold);
-            transition: left 0.3s ease;
-            z-index: 0;
-        }
-        
-        .contact-link span {
-            position: relative;
-            z-index: 1;
-        }
-        
-        .contact-link:hover::before {
-            left: 0;
-        }
-        
-        .contact-link:hover {
-            color: var(--black);
-            transform: translateY(-3px);
-        }
-        
-        footer {
-            background: #000;
-            color: #666;
-            text-align: center;
-            padding: 2.5rem;
-        }
-        
-        @media (max-width: 1024px) {
-            section { padding: 6rem 2rem; }
-            nav { padding: 1.5rem 2rem; }
-            .hero h1 { font-size: 3.5rem; }
-            .timeline::before { left: 0; }
-            .timeline-item { flex-direction: column !important; }
-            .timeline-content { width: 100%; margin-left: 3rem; }
-            .timeline-dot { left: 0; }
-        }
-        
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2.5rem; }
-            nav ul { gap: 1.5rem; font-size: 0.9rem; }
-            .projects-grid { grid-template-columns: 1fr; }
-            h2 { font-size: 2.5rem; }
-            .skill-node { min-width: 180px; padding: 1.5rem; }
-            .about-video iframe, .video-placeholder-about { height: 300px; }
-        }
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-/* Achievement Counter Animation */
-.stat-number {
-    display: inline-block;
-    font-size: 2.5rem;
-    font-weight: 800;
-    background: linear-gradient(135deg, var(--gold) 0%, var(--olive) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.stat-item {
-    text-align: center;
-    padding: 1.5rem;
-}
-
-.stat-label {
-    display: block;
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-    color: #666;
-}
-
-/* Testimonial Cards */
-.testimonial-snippet {
-    background: linear-gradient(135deg, #F5F3EE 0%, #FAF9F6 100%);
-    border-left: 4px solid var(--gold);
-    padding: 1.5rem;
-    margin: 2rem 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease;
-}
-
-.testimonial-snippet:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-}
-
-.testimonial-snippet blockquote {
-    font-style: italic;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin: 0 0 1rem 0;
-    color: #333;
-}
-
-.testimonial-snippet cite {
-    font-style: normal;
-    color: var(--gold);
-    font-weight: 600;
-}
-
-/* Skill Category Filters */
-.skill-filters {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin-bottom: 3rem;
-    flex-wrap: wrap;
-}
-
-.filter-btn {
-    padding: 0.75rem 1.5rem;
-    background: transparent;
-    border: 2px solid var(--olive);
-    border-radius: 50px;
-    color: var(--olive);
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.filter-btn:hover {
-    background: var(--olive);
-    color: white;
-    transform: translateY(-2px);
-}
-
-.filter-btn.active {
-    background: var(--gold);
-    border-color: var(--gold);
-    color: white;
-}
-
-/* Micro-interactions */
-.skill-node:hover .node-circle {
-    transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.3);
-    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-/* Resume Download Button */
-.resume-download-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding: 1rem 2rem;
-    background: var(--gold);
-    color: var(--black);
-    border-radius: 50px;
-    font-weight: 700;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
-    margin-top: 2rem;
-}
-
-.resume-download-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
-}
-
-.resume-download-btn .btn-arrow {
-    transition: transform 0.3s ease;
-}
-
-.resume-download-btn:hover .btn-arrow {
-    transform: translateX(5px);
-}
-
-/* Currently Learning Badge */
-.learning-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    background: rgba(212, 175, 55, 0.1);
-    border: 1px solid var(--gold);
-    border-radius: 50px;
-    font-size: 0.9rem;
-    margin-top: 1rem;
-}
-
-.pulse-dot {
-    width: 8px;
-    height: 8px;
-    background: var(--gold);
-    border-radius: 50%;
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0%, 100% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.5); opacity: 0.5; }
-}
-
-/* Gradient Headers */
-.section-title {
-    background: linear-gradient(135deg, var(--gold) 0%, var(--olive) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-/* Parallax */
-.hero {
-    background-attachment: fixed;
-}
-
-    
-
-/* Animated Steam */
-.steam {
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.steam-line {
-    fill: none;
-    stroke: rgba(107, 124, 89, 0.7);
-    stroke-width: 2;
-    stroke-linecap: round;
-    animation: steam-rise 3s ease-in-out infinite;
-}
-
-.steam-line:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.steam-line:nth-child(2) {
-    animation-delay: 0.5s;
-}
-
-.steam-line:nth-child(3) {
-    animation-delay: 1s;
-}
-
-@keyframes steam-rise {
-    0% {
-        opacity: 0;
-        transform: translateY(0) scale(1);
+    <!-- SCHEMA.ORG STRUCTURED DATA FOR GOOGLE RICH RESULTS -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Hannah Pagade",
+      "alternateName": "The Nurse Who Can Code",
+      "url": "https://moonlit-studios.pages.dev",
+      "image": "https://moonlit-studios.pages.dev/hannah-pagade.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/hannah-pagade"
+      ],
+      "jobTitle": "Full-Stack Developer & Healthcare Technology Consultant",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Moonlit Studios"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "University of Colorado Boulder"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Westminster",
+        "addressRegion": "CO",
+        "addressCountry": "US"
+      },
+      "knowsAbout": [
+        "Healthcare Technology",
+        "Full-Stack Development",
+        "HIPAA Compliance",
+        "React",
+        "Node.js",
+        "Healthcare Operations",
+        "Patient Portal Development",
+        "Medical Website Design",
+        "Healthcare UI/UX",
+        "Customer Success Operations"
+      ],
+      "description": "Healthcare operations leader with 15+ years experience managing teams of 130+ and multimillion-dollar budgets. Now building HIPAA-compliant web applications and healthcare technology solutions. The Nurse Who Can Code."
     }
-    50% {
-        opacity: 0.7;
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(-20px) scale(1.2);
-    }
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    .chai-cup-button {
-        width: 60px;
-        height: 60px;
-        bottom: 20px;
-        right: 20px;
-    }
+    </script>
     
-    .chai-cup-button svg {
-        width: 35px;
-        height: 35px;
+    <!-- SERVICE SCHEMA FOR LOCAL SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Moonlit Studios",
+      "image": "https://moonlit-studios.pages.dev/logo.png",
+      "priceRange": "$2,500 - $10,000",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Westminster",
+        "addressRegion": "CO",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "39.8366",
+        "longitude": "-105.0372"
+      },
+      "url": "https://moonlit-studios.pages.dev",
+      "telephone": "+1-910-789-4647",
+      "email": "hannah@moonlitstudios.com",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/hannah-pagade"
+      ],
+      "description": "Professional web development and healthcare technology consulting services. Specializing in HIPAA-compliant applications, patient portals, and medical practice websites."
     }
-}
-
+    </script>
     
-
-    
-/* Moonlit Peacock Button - Scroll to Top 🦚 */
-.moonlit-button {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 70px;
-    height: 70px;
-    background: linear-gradient(135deg, #4A9B9B 0%, #6B4E71 100%);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 4px 25px rgba(74, 155, 155, 0.4);
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(100px);
-    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-    z-index: 1000;
-    border: none;
-}
-
-.moonlit-button.visible {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.moonlit-button:hover {
-    transform: translateY(-5px) scale(1.1);
-    box-shadow: 0 8px 35px rgba(74, 155, 155, 0.6);
-}
-
-.peacock-feather {
-    animation: float 2s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-    .moonlit-button {
-        width: 60px;
-        height: 60px;
-        bottom: 20px;
-        right: 20px;
-    }
-    
-    .peacock-feather {
-        font-size: 1.8rem !important;
-    }
-}
-
-/* Legacy support - keep old class name working */
-.chai-cup-button {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 70px;
-    height: 70px;
-    background: linear-gradient(135deg, #4A9B9B 0%, #6B4E71 100%);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 4px 25px rgba(74, 155, 155, 0.4);
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(100px);
-    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-    z-index: 1000;
-    border: none;
-}
-
-.chai-cup-button.visible {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.chai-cup-button:hover {
-    transform: translateY(-5px) scale(1.1);
-    box-shadow: 0 8px 35px rgba(74, 155, 155, 0.6);
-}
-
-    </style>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/peacock.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section id="home" class="hero">
+    <!-- Hero Section -->
+    <section class="hero">
+        <canvas id="particles-canvas"></canvas>
         <div class="hero-content">
-            <div class="status-badge">🌙 Moonlit Studios</div>
-            <h1>I'm <span style="background: linear-gradient(135deg, var(--gold) 0%, var(--white) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Hannah Pagade</span></h1>
-            <p class="title">The CEO Who Codes</p>
-            <p class="location" style="font-size: 1.3rem; margin-bottom: 2rem;">
-                Where Healthcare Meets Creativity Meets Technology 🦚
-            </p>
+            <h1 class="hero-heading">
+                <span class="name-text">Hannah Pagade</span>
+                <span class="tagline-container">
+                    <span class="static-part">The </span>
+                    <span class="typing-text" id="typed-text"></span>
+                    <span class="cursor">|</span>
+                </span>
+            </h1>
+            <p class="hero-subtitle">Healthcare operations leader with 15+ years experience, now building digital solutions with modern full-stack skills</p>
             
-            <div class="stats-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; margin: 3rem 0; text-align: center;">
+            <div class="hero-stats">
                 <div class="stat-item">
-                    <span class="stat-icon" style="font-size: 2.5rem; display: block; margin-bottom: 0.5rem;">🏥</span>
-                    <div class="stat-number" data-target="10" style="font-size: 3rem; font-weight: 800; background: linear-gradient(135deg, var(--gold) 0%, var(--white) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">10</div>
-                    <div class="stat-label" style="color: #ccc; font-size: 0.95rem; margin-top: 0.5rem;">Years Healthcare</div>
+                    <span class="stat-number" data-count="15">0</span><span class="plus">+</span>
+                    <span class="stat-label">Years Healthcare Operations</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-icon" style="font-size: 2.5rem; display: block; margin-bottom: 0.5rem;">📚</span>
-                    <div class="stat-number" data-target="4" style="font-size: 3rem; font-weight: 800; background: linear-gradient(135deg, var(--gold) 0%, var(--white) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">4</div>
-                    <div class="stat-label" style="color: #ccc; font-size: 0.95rem; margin-top: 0.5rem;">Books Written</div>
+                    <span class="stat-number" data-count="130">0</span><span class="plus">+</span>
+                    <span class="stat-label">Teams Successfully Led</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-icon" style="font-size: 2.5rem; display: block; margin-bottom: 0.5rem;">🚀</span>
-                    <div class="stat-number" data-target="6" style="font-size: 3rem; font-weight: 800; background: linear-gradient(135deg, var(--gold) 0%, var(--white) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">6</div>
-                    <div class="stat-label" style="color: #ccc; font-size: 0.95rem; margin-top: 0.5rem;">Businesses Built</div>
+                    <span class="stat-number" data-count="6">0</span>
+                    <span class="stat-label">Platforms Built & Deployed</span>
                 </div>
             </div>
             
-            <div class="cta-buttons">
+            <div class="hero-cta">
                 <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Book a Moonlit Meeting 🌙</a>
+                <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2>From Bedside to Boardroom to Code 🔥🦚</h2>
-            <p class="section-subtitle">The clinical director who became a fantasy author who became an AI CEO</p>
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container" id="main-content">
+            <h2 class="section-title">About Hannah</h2>
             
-            <div class="about-content" style="max-width: 900px; margin: 0 auto 4rem;">
-                <p style="font-size: 1.2rem; line-height: 1.9; margin-bottom: 2rem;">
-                    <strong>🏥 Clinical Leadership (2010-2020):</strong> Spent a decade on the frontlines of healthcare—not just treating patients, but leading clinical teams, optimizing workflows, and watching brilliant clinicians struggle with technology that fought them instead of helped them. I saw the gap between what healthcare needed and what tech companies were building. Someone who understood BOTH worlds needed to bridge it.
-                </p>
+            <div class="about-layout">
+                <div class="video-wrapper">
+                    <div class="video-container">
+                        <iframe 
+                            src="PLACEHOLDER_INTRO_VIDEO" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    <p class="video-caption">Watch my 60-second intro</p>
+                </div>
                 
-                <p style="font-size: 1.2rem; line-height: 1.9; margin-bottom: 2rem;">
-                    <strong>📚 Published Fantasy Author (2022):</strong> While still in healthcare, I wrote what I couldn't say out loud—epic stories of transformation, power, and rising from ashes. Released <em>"Eclipse of Fire & Wings"</em> under pen name Himani Pagade. But here's the twist: I got frustrated with available tools, so I <em>built 7 AI-powered author tools</em> myself. Turns out, when you need something that doesn't exist, you can just... build it. 💡
-                </p>
-                
-                <p style="font-size: 1.2rem; line-height: 1.9; margin-bottom: 2rem;">
-                    <strong>💻 MS Computer Science (2023-2024):</strong> Decided to stop wishing someone would fix healthcare tech and do it myself. Dove deep into AI/ML, full-stack development, and system design. Realized I had a rare combination: <em>clinical expertise + creative storytelling + technical execution</em>. Most people have one. I had all three.
-                </p>
-                
-                <p style="font-size: 1.2rem; line-height: 1.9; margin-bottom: 3rem;">
-                    <strong>🚀 CEO & Founder (2024-Present):</strong> Built <strong>Pagade Ventures</strong>: 6 AI-powered businesses including healthcare AI that reduces clinical handoff time by 80%. Launched <strong>Moonlit Studios</strong> to help other founders, healthcare innovators, and creative entrepreneurs build technology that doesn't just work—it <em>transforms</em>.
-                </p>
+                <div class="about-text">
+                    <p class="lead">I spent 15 years in healthcare operations—leading teams of 130+, managing multimillion-dollar budgets, and building partnerships with Kaiser, Optum, and university health networks.</p>
+                    
+                    <p>I maintained 96% audit success rates and improved staff retention by 20-25%. I know healthcare operations because I <em>lived</em> them.</p>
+                    
+                    <p><strong>Then I learned to code.</strong> Not from bootcamps—from building real applications, solving actual problems, and shipping production-ready platforms.</p>
+                    
+                    <p>Now I combine 15 years of healthcare domain expertise with modern full-stack development skills to build digital solutions that actually work in clinical environments.</p>
+                    
+                    <p class="highlight-box">Currently completing my <strong>MS in AI/Machine Learning at CU Boulder</strong> while taking on select freelance projects.</p>
+                </div>
             </div>
             
-            <div class="trifecta" style="background: var(--cream); padding: 4rem 2rem; border-radius: 12px; margin-top: 3rem;">
-                <h3 style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem; color: var(--black);">The Rare Trifecta ✨</h3>
-                <p style="text-align: center; color: #666; font-size: 1.1rem; margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">
-                    Most freelancers are <strong>EITHER</strong> technical <strong>OR</strong> creative <strong>OR</strong> domain experts. I'm <strong>ALL THREE</strong>.
-                </p>
+            <div class="unique-value">
+                <h3>Why I'm Different</h3>
+                <div class="value-grid">
+                    <div class="value-card">
+                        <div class="value-icon">🏥</div>
+                        <h4>Healthcare Credibility</h4>
+                        <p>I've worked inside hospitals, clinics, and care facilities. I speak the language of administrators, clinicians, and payers.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">💻</div>
+                        <h4>Technical Capability</h4>
+                        <p>I can actually code. React, Node.js, Python, databases—I build production-ready applications from scratch.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🎯</div>
+                        <h4>Operational Excellence</h4>
+                        <p>I build systems that work. 15 years of operations leadership means I understand workflows, compliance, and what it takes to ship.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-alternate">
+        <div class="container">
+            <h2 class="section-title">What I've Mastered</h2>
+            <p class="section-intro">200+ hours of intensive development work. Here's what I can build for you:</p>
+            
+            <div class="skills-grid">
                 
-                <div class="trifecta-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem;">
-                    <div class="trifecta-card" style="background: var(--white); padding: 2.5rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease;">
-                        <div class="trifecta-icon" style="font-size: 4rem; margin-bottom: 1rem;">🏥</div>
-                        <h4 style="font-size: 1.5rem; color: var(--black); margin-bottom: 1rem;">Healthcare Expertise</h4>
-                        <p style="color: #666; line-height: 1.7;">10 years as clinical director. I understand workflows, HIPAA compliance, regulatory requirements, and what clinicians <em>actually</em> need to save lives—not what tech bros think they need.</p>
+                <!-- FRONTEND -->
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">React & Next.js</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percent="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">UI/UX Design</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percent="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Responsive Design</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percent="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Tailwind CSS</span>
+                            <span class="skill-percent">88%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percent="88"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- BACKEND -->
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Node.js & Express</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percent="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">RESTful APIs</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percent="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">PostgreSQL & MongoDB</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percent="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Python & FastAPI</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percent="75"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- HEALTHCARE TECH -->
+                <div class="skill-category">
+                    <h3>Healthcare Technology</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">HIPAA Compliance</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percent="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Clinical Workflows</span>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percent="95"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Healthcare UX</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percent="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">EHR Integration Concepts</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percent="75"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AI & AUTOMATION -->
+                <div class="skill-category">
+                    <h3>AI & Automation</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">AI Integration</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percent="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Workflow Automation</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percent="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Data Analytics</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percent="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Machine Learning (studying)</span>
+                            <span class="skill-percent">65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-fill" data-percent="65"></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-alternate fade-in-section" role="region" aria-labelledby="services-heading">
+        <div class="container">
+            <h2 id="services-heading" class="section-title">Services & Pricing</h2>
+            <p class="section-intro">Clear pricing. Real results. Healthcare expertise + technical skills.</p>
+            
+            <div class="services-grid">
+                
+                <!-- SERVICE 1 -->
+                <div class="service-card hover-lift" role="article" aria-labelledby="service-1-title">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="8" y="12" width="48" height="40" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 20H48M16 28H40M16 36H44" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 id="service-1-title">Healthcare Platform Development</h3>
+                    <p class="service-description">Full-stack web applications for healthcare organizations. Patient portals, provider dashboards, telemedicine platforms built with HIPAA compliance from day one.</p>
+                    
+                    <div class="price-tag">
+                        <span class="starting">Starting at</span>
+                        <span class="price">$5,000</span>
                     </div>
                     
-                    <div class="trifecta-card" style="background: var(--white); padding: 2.5rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease;">
-                        <div class="trifecta-icon" style="font-size: 4rem; margin-bottom: 1rem;">🎨</div>
-                        <h4 style="font-size: 1.5rem; color: var(--black); margin-bottom: 1rem;">Creative Storytelling</h4>
-                        <p style="color: #666; line-height: 1.7;">Published fantasy romance author with 4 books. I make technology feel <em>human</em> through narrative-driven design. Your users don't want features—they want a journey.</p>
+                    <ul class="service-features">
+                        <li><span class="check" aria-hidden="true">✓</span> HIPAA-compliant architecture</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Secure authentication & authorization</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Database design & optimization</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Modern responsive UI</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Post-launch support (30 days)</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Technical documentation</li>
+                    </ul>
+                    
+                    <a href="#contact" class="btn-service" aria-label="Get started with Healthcare Platform Development">Get Started</a>
+                </div>
+                
+                <!-- SERVICE 2 - FEATURED -->
+                <div class="service-card featured hover-lift" role="article" aria-labelledby="service-2-title">
+                    <div class="popular-badge" aria-label="Most popular service">Most Popular</div>
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="8" width="56" height="40" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M4 16H60M20 28H44M24 36H40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 id="service-2-title">Medical Website Design</h3>
+                    <p class="service-description">Professional websites for medical practices, clinics, and healthcare providers. SEO optimized for local search, accessibility compliant, and designed to convert visitors into patients.</p>
+                    
+                    <div class="price-tag">
+                        <span class="starting">Starting at</span>
+                        <span class="price">$2,500</span>
                     </div>
                     
-                    <div class="trifecta-card" style="background: var(--white); padding: 2.5rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease;">
-                        <div class="trifecta-icon" style="font-size: 4rem; margin-bottom: 1rem;">💻</div>
-                        <h4 style="font-size: 1.5rem; color: var(--black); margin-bottom: 1rem;">Technical Execution</h4>
-                        <p style="color: #666; line-height: 1.7;">Full-stack developer with MS in CS. I design it, I build it, I ship it. No handoffs. No "lost in translation" moments. No excuses. Just results.</p>
-                    </div>
+                    <ul class="service-features">
+                        <li><span class="check" aria-hidden="true">✓</span> Custom design (no templates)</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Mobile responsive</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Local SEO optimization</li>
+                        <li><span class="check" aria-hidden="true">✓</span> WCAG 2.1 accessibility</li>
+                        <li><span class="check" aria-hidden="true">✓</span> HIPAA-conscious forms</li>
+                        <li><span class="check" aria-hidden="true">✓</span> 2-3 week delivery</li>
+                    </ul>
+                    
+                    <a href="#contact" class="btn-service btn-popular" aria-label="Start your Medical Website Design project">Start Your Project</a>
                 </div>
                 
-                <p style="text-align: center; font-size: 1.3rem; margin-top: 3rem; font-weight: 600; color: var(--gold); font-style: italic;">
-                    "Where the Phoenix Rises and the Peacock Dances" 🔥🦚
-                </p>
+                <!-- SERVICE 3 -->
+                <div class="service-card hover-lift" role="article" aria-labelledby="service-3-title">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="20" r="8" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 52C16 42 22 36 32 36C42 36 48 42 48 52" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M44 24L52 16M52 24L44 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 id="service-3-title">Healthcare Tech Consulting</h3>
+                    <p class="service-description">Technical consulting for healthcare tech companies. Customer success operations, workflow optimization, compliance guidance, and technical strategy from someone who's built healthcare systems.</p>
+                    
+                    <div class="price-tag">
+                        <span class="hourly">Hourly Rate</span>
+                        <span class="price">$150-200</span>
+                    </div>
+                    
+                    <ul class="service-features">
+                        <li><span class="check" aria-hidden="true">✓</span> Operations strategy</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Customer success design</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Workflow optimization</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Technical documentation</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Team training & coaching</li>
+                        <li><span class="check" aria-hidden="true">✓</span> Healthcare compliance review</li>
+                    </ul>
+                    
+                    <a href="#contact" class="btn-service" aria-label="Book a Healthcare Tech Consulting session">Book Consultation</a>
+                </div>
+                
+            </div>
+            
+            <div class="retainer-option fade-in-section">
+                <h3>Monthly Retainers Available</h3>
+                <p>Ongoing development and support: <strong>$3,000-10,000/month</strong> depending on scope. Perfect for healthcare organizations needing continuous development, maintenance, and strategic support.</p>
+                <a href="#contact" class="btn-secondary" aria-label="Discuss monthly retainer options">Discuss Retainer</a>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="experience">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section-padding">
         <div class="container">
-            <h2>Services That Shine 💎</h2>
-            <p class="section-subtitle">Classy, not flashy. Elegant solutions that actually work.</p>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>🎨 UI/UX Design</h3>
-                        <div class="company" style="color: var(--gold); font-size: 1.5rem; font-weight: 800;">$100-150/hr</div>
-                        <div class="duration">User Research • Wireframing • Prototyping • Design Systems</div>
-                        <ul>
-                            <li>Beautiful, user-centered design for healthcare tech, author platforms, and creative businesses</li>
-                            <li>Wireframing and interactive prototyping in Figma</li>
-                            <li>Brand identity design with narrative-driven approach</li>
-                            <li>Healthcare-specific UX patterns (HIPAA-compliant interfaces)</li>
-                            <li>User research and journey mapping</li>
-                        </ul>
-                    </div>
-                    <div class="timeline-dot"></div>
-                </div>
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-intro">Demo projects showcasing what I can build for your healthcare organization</p>
 
-                <div class="timeline-item">
-                    <div class="timeline-content" style="border: 3px solid var(--gold); position: relative;">
-                        <div style="position: absolute; top: -15px; left: 20px; background: var(--gold); color: var(--black); padding: 0.4rem 1.2rem; border-radius: 20px; font-weight: 700; font-size: 0.85rem;">⭐ MOST POPULAR</div>
-                        <h3>💻 Full-Stack Development</h3>
-                        <div class="company" style="color: var(--gold); font-size: 1.5rem; font-weight: 800;">$125-175/hr</div>
-                        <div class="duration">React • Node.js • Python • Cloud Deployment</div>
-                        <ul>
-                            <li><strong>I design it AND build it.</strong> Complete web applications from idea to launch.</li>
-                            <li>React/Next.js front-end applications</li>
-                            <li>Backend APIs, databases, authentication</li>
-                            <li>Cloudflare/Vercel deployment and optimization</li>
-                            <li>Responsive, mobile-first, fast as lightning ⚡</li>
-                        </ul>
-                    </div>
-                    <div class="timeline-dot" style="background: var(--gold); width: 24px; height: 24px;"></div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h3>🏥 Healthcare Tech Consulting</h3>
-                        <div class="company" style="color: var(--gold); font-size: 1.5rem; font-weight: 800;">$150-200/hr</div>
-                        <div class="duration">Clinical Workflows • HIPAA • Provider Tools</div>
-                        <ul>
-                            <li><strong>I've seen healthcare tech fail in real time.</strong> Let's build tech that actually helps clinicians save lives.</li>
-                            <li>Clinical workflow optimization and analysis</li>
-                            <li>HIPAA-compliant design and architecture</li>
-                            <li>Patient portal UX and provider tool design</li>
-                            <li>Healthcare AI implementation strategy</li>
-                            <li>Regulatory compliance guidance</li>
-                        </ul>
-                    </div>
-                    <div class="timeline-dot"></div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-content" style="background: linear-gradient(135deg, var(--cream) 0%, var(--off-white) 100%); border: 2px solid var(--olive);">
-                        <h3>🌙 Monthly Retainers</h3>
-                        <div class="company" style="color: var(--olive); font-weight: 700;">Need Ongoing Support?</div>
-                        <div class="duration">Priority Access • Faster Turnaround • Dedicated Support</div>
-                        <ul>
-                            <li><strong>Moonlit Retainer:</strong> $3K-5K/month • 20 hours per month of design + development + consulting. Perfect for startups who need consistent support.</li>
-                            <li><strong>Full Moon Retainer:</strong> $6K-10K/month • 40 hours per month. Priority access, faster turnaround, dedicated Slack channel. For businesses ready to scale fast.</li>
-                        </ul>
-                    </div>
-                    <div class="timeline-dot" style="background: var(--olive);"></div>
+            <div class="portfolio-controls" aria-hidden="false">
+                <div class="filter-buttons" role="tablist" aria-label="Filter projects">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="apps">Healthcare Apps</button>
+                    <button class="filter-btn" data-filter="websites">Websites</button>
+                    <button class="filter-btn" data-filter="dashboards">Dashboards</button>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Work That Transforms ✨</h2>
-            <p class="section-subtitle">Real projects. Real impact. Real results.</p>
-            
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-video" style="background: linear-gradient(135deg, #4A9B9B 0%, #1B4965 100%); display: flex; align-items: center; justify-content: center; color: white; padding: 3rem; text-align: center;">
-                        <div>
-                            <div style="font-size: 4rem; margin-bottom: 1rem;">🏥</div>
-                            <h4 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Healthcare AI Platform</h4>
-                            <p style="opacity: 0.9;">Clinical workflow transformation</p>
+            <div class="portfolio-grid" id="portfolio-grid">
+
+                <!-- PROJECT 1: Healthcare Patient Portal -->
+                <article class="project-card" data-category="apps" itemscope itemtype="https://schema.org/CreativeWork">
+                    <div class="project-image-wrapper">
+                        <div class="project-video">
+                            <iframe data-src="PLACEHOLDER_VIDEO_1" frameborder="0" loading="lazy" allowfullscreen title="Healthcare Patient Portal demo"></iframe>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="view-details">View Project Details</span>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Healthcare AI Solutions</h3>
-                        <p class="description">
-                            Designed and built clinical handoff platform that reduces patient transfer time by 80%. 
-                            From user research and wireframes to full-stack implementation. HIPAA-compliant, 
-                            AI-powered, and actually used by real clinicians saving real lives.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">AI/ML</span>
-                            <span class="tech-tag">Healthcare</span>
-                            <span class="tech-tag">HIPAA</span>
+                        <h3 itemprop="name">Healthcare Patient Portal</h3>
+                        <p itemprop="description">Secure patient portal with appointment scheduling, medical records access, and provider messaging. HIPAA-compliant architecture with modern UX designed for patients and providers.</p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Secure authentication & authorization</li>
+                                <li>Appointment scheduling system</li>
+                                <li>Medical records viewer</li>
+                                <li>Provider messaging (HIPAA-compliant)</li>
+                                <li>Mobile-responsive design</li>
+                            </ul>
                         </div>
-                        <div style="margin-top: 1.5rem; padding: 1rem; background: var(--cream); border-radius: 8px;">
-                            <strong style="color: var(--gold); font-size: 1.1rem;">Impact:</strong> 
-                            <span style="color: #666;">80% time reduction • $2-4B market opportunity • Lives saved daily</span>
+                        <div class="tech-stack">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">PostgreSQL</span>
+                            <span class="tech-badge">JWT Auth</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric"><span class="metric-icon">✓</span><span>HIPAA Compliant</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>Secure Messaging</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>Mobile Responsive</span></div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#contact" class="btn-project">Build This For Me</a>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
-                    <div class="project-video" style="background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); display: flex; align-items: center; justify-content: center; color: white; padding: 3rem; text-align: center;">
-                        <div>
-                            <div style="font-size: 4rem; margin-bottom: 1rem;">🎨</div>
-                            <h4 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Creative Business Platforms</h4>
-                            <p style="opacity: 0.9;">Author & artist tools</p>
+                <!-- PROJECT 2: Medical Practice Website (Featured) -->
+                <article class="project-card featured" data-category="websites" itemscope itemtype="https://schema.org/CreativeWork">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="project-image-wrapper">
+                        <div class="project-video">
+                            <iframe data-src="PLACEHOLDER_VIDEO_2" frameborder="0" loading="lazy" allowfullscreen title="Medical Practice Website demo"></iframe>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>AI-Powered Creative Tools</h3>
-                        <p class="description">
-                            Built 7+ AI tools for authors, including audiobook generation platforms that reduce 
-                            production costs by 90%. Full brand identity, UI/UX design, and technical implementation. 
-                            Because I'm an author too—I build what I need and what my community needs.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TTS AI</span>
-                            <span class="tech-tag">Audio Processing</span>
-                            <span class="tech-tag">Stripe</span>
+                        <h3 itemprop="name">Medical Practice Website</h3>
+                        <p itemprop="description">Professional website for healthcare providers with service showcase, provider profiles, and HIPAA-conscious contact forms. SEO optimized for local search and accessibility compliant.</p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Provider profile pages</li>
+                                <li>Service showcase with details</li>
+                                <li>Secure contact forms</li>
+                                <li>Local SEO optimization</li>
+                                <li>WCAG 2.1 AA accessibility</li>
+                            </ul>
                         </div>
-                        <div style="margin-top: 1.5rem; padding: 1rem; background: var(--cream); border-radius: 8px;">
-                            <strong style="color: var(--gold); font-size: 1.1rem;">Impact:</strong> 
-                            <span style="color: #666;">90% cost reduction • Authors empowered • Dreams made affordable</span>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Next.js</span>
+                            <span class="tech-badge">Tailwind CSS</span>
+                            <span class="tech-badge">Cloudflare</span>
+                            <span class="tech-badge">Schema.org</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric"><span class="metric-icon">✓</span><span>SEO Optimized</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>Accessible</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>Fast Loading</span></div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#contact" class="btn-project">Get Started</a>
                         </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-card">
-                    <div class="project-video" style="background: linear-gradient(135deg, #6B4E71 0%, #4A9B9B 100%); display: flex; align-items: center; justify-content: center; color: white; padding: 3rem; text-align: center;">
-                        <div>
-                            <div style="font-size: 4rem; margin-bottom: 1rem;">🚀</div>
-                            <h4 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Startup MVPs</h4>
-                            <p style="opacity: 0.9;">From concept to launch</p>
+                <!-- PROJECT 3: Client Onboarding Dashboard -->
+                <article class="project-card" data-category="dashboards" itemscope itemtype="https://schema.org/CreativeWork">
+                    <div class="project-image-wrapper">
+                        <div class="project-video">
+                            <iframe data-src="PLACEHOLDER_VIDEO_3" frameborder="0" loading="lazy" allowfullscreen title="Client Onboarding Dashboard demo"></iframe>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Your Project Could Be Here</h3>
-                        <p class="description">
-                            I help founders, healthcare innovators, and creative entrepreneurs transform ideas into 
-                            shipped products. Design, development, strategy—all under one roof (or should I say, 
-                            under one moon 🌙). No handoffs. No miscommunication. Just execution.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Your Stack</span>
-                            <span class="tech-tag">Your Vision</span>
-                            <span class="tech-tag">Real Results</span>
+                        <h3 itemprop="name">Client Onboarding Dashboard</h3>
+                        <p itemprop="description">SaaS onboarding platform with automated workflows, progress tracking, and admin management. Built with customer success operations expertise from 15 years in healthcare.</p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Automated workflow engine</li>
+                                <li>Progress tracking dashboards</li>
+                                <li>Email notification system</li>
+                                <li>Admin management panel</li>
+                                <li>Custom reporting</li>
+                            </ul>
                         </div>
-                        <div style="margin-top: 1.5rem; padding: 1rem; background: var(--cream); border-radius: 8px;">
-                            <strong style="color: var(--gold); font-size: 1.1rem;">Let's Build:</strong> 
-                            <span style="color: #666;">Your healthcare platform • Your creative tool • Your big idea</span>
+                        <div class="tech-stack">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">Chart.js</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric"><span class="metric-icon">✓</span><span>Automated Workflows</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>Email Integration</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>Custom Reports</span></div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#contact" class="btn-project">Learn More</a>
                         </div>
                     </div>
-                </div>
+                </article>
+
+                <!-- PROJECT 4: Healthcare Analytics Dashboard -->
+                <article class="project-card" data-category="dashboards" itemscope itemtype="https://schema.org/CreativeWork">
+                    <div class="project-image-wrapper">
+                        <div class="project-video">
+                            <iframe data-src="PLACEHOLDER_VIDEO_4" frameborder="0" loading="lazy" allowfullscreen title="Healthcare Analytics Dashboard demo"></iframe>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 itemprop="name">Healthcare Analytics Dashboard</h3>
+                        <p itemprop="description">Real-time analytics for patient outcomes, operational KPIs, and resource utilization. Custom dashboards with role-based access and exportable reports.</p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Real-time metrics</li>
+                                <li>Custom reports & exports</li>
+                                <li>Role-based access</li>
+                                <li>Predictive insights</li>
+                                <li>Secure data pipelines</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Postgres</span>
+                            <span class="tech-badge">Redis</span>
+                            <span class="tech-badge">D3.js</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric"><span class="metric-icon">✓</span><span>Realtime</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>Exportable Reports</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>Predictive Insights</span></div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#contact" class="btn-project">Request Demo</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 5: Telemedicine Interface -->
+                <article class="project-card" data-category="apps" itemscope itemtype="https://schema.org/CreativeWork">
+                    <div class="project-image-wrapper">
+                        <div class="project-video">
+                            <iframe data-src="PLACEHOLDER_VIDEO_5" frameborder="0" loading="lazy" allowfullscreen title="Telemedicine Interface demo"></iframe>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 itemprop="name">Telemedicine Interface</h3>
+                        <p itemprop="description">Secure video visits with scheduling, virtual waiting room, and integrated billing. Optimized for low-bandwidth clinical environments.</p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Low-latency video</li>
+                                <li>Virtual waiting room</li>
+                                <li>Integrated billing</li>
+                                <li>Provider notes & recordings</li>
+                                <li>Mobile-friendly UI</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">WebRTC</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">Stripe</span>
+                            <span class="tech-badge">HIPAA</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric"><span class="metric-icon">✓</span><span>Low Latency</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>Integrated Billing</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>Mobile Ready</span></div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#contact" class="btn-project">Explore Telemedicine</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PROJECT 6: Appointment Booking System -->
+                <article class="project-card" data-category="apps" itemscope itemtype="https://schema.org/CreativeWork">
+                    <div class="project-image-wrapper">
+                        <div class="project-video">
+                            <iframe data-src="PLACEHOLDER_VIDEO_6" frameborder="0" loading="lazy" allowfullscreen title="Appointment Booking System demo"></iframe>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 itemprop="name">Appointment Booking System</h3>
+                        <p itemprop="description">Scalable appointment platform with availability management, multi-location support, and patient reminders (SMS/Email). Integrates with EHR scheduling APIs.</p>
+                        <div class="project-features">
+                            <h4>Key Features:</h4>
+                            <ul>
+                                <li>Multi-location scheduling</li>
+                                <li>Automated reminders</li>
+                                <li>Calendar sync</li>
+                                <li>Provider availability rules</li>
+                                <li>Patient self-service</li>
+                            </ul>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">GraphQL</span>
+                            <span class="tech-badge">Postgres</span>
+                            <span class="tech-badge">Twilio</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric"><span class="metric-icon">✓</span><span>Automated Reminders</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>Multi-location</span></div>
+                            <div class="metric"><span class="metric-icon">✓</span><span>EHR Integrations</span></div>
+                        </div>
+                        <div class="project-links">
+                            <a href="#contact" class="btn-project">Start Booking</a>
+                        </div>
+                    </div>
+                </article>
+
             </div>
-            
-            <div style="text-align: center; margin-top: 4rem; padding: 3rem; background: var(--cream); border-radius: 12px;">
-                <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--black);">Want to see your project here?</h3>
-                <p style="font-size: 1.2rem; color: #666; margin-bottom: 2rem;">Let's build something legendary together under the moonlight.</p>
-                <a href="#contact" class="btn btn-primary" style="display: inline-block;">Start Your Project 🌙</a>
+
+            <div class="portfolio-cta" style="text-align:center; margin-top: 3rem;">
+                <a href="#contact" class="btn btn-primary">Want a tailored solution? Let's talk</a>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2>Design Toolkit</h2>
-            <p class="section-subtitle">Tools and skills I use to bring ideas to life</p>
-            
-            <div class="skills-wireframe">
-                <div class="wireframe-connections">
-                    <svg width="100%" height="100%">
-                        <!-- Connections from Core to Advanced -->
-                        <line x1="50%" y1="15%" x2="30%" y2="40%" stroke="#D4AF37" stroke-width="2" stroke-dasharray="5,5" opacity="0.4"/>
-                        <line x1="50%" y1="15%" x2="50%" y2="40%" stroke="#D4AF37" stroke-width="2" stroke-dasharray="5,5" opacity="0.4"/>
-                        <line x1="50%" y1="15%" x2="70%" y2="40%" stroke="#D4AF37" stroke-width="2" stroke-dasharray="5,5" opacity="0.4"/>
-                        <!-- Connections from Advanced to Foundation -->
-                        <line x1="30%" y1="55%" x2="20%" y2="80%" stroke="#6B7C59" stroke-width="2" stroke-dasharray="5,5" opacity="0.3"/>
-                        <line x1="30%" y1="55%" x2="40%" y2="80%" stroke="#6B7C59" stroke-width="2" stroke-dasharray="5,5" opacity="0.3"/>
-                        <line x1="50%" y1="55%" x2="60%" y2="80%" stroke="#6B7C59" stroke-width="2" stroke-dasharray="5,5" opacity="0.3"/>
-                        <line x1="70%" y1="55%" x2="80%" y2="80%" stroke="#6B7C59" stroke-width="2" stroke-dasharray="5,5" opacity="0.3"/>
-                    </svg>
-                </div>
-                
-                <!-- CORE EXPERTISE -->
-                <div class="tier-label">Core Expertise</div>
-                <div class="skills-tier">
-                    <div class="skill-node core" onclick="this.classList.toggle('active')">
-                        <h3>UI/UX Design</h3>
-                        <div class="skill-level">Expert</div>
-                        <div class="skill-description">
-                            User-centered design methodology, wireframing, prototyping, and usability testing. 
-                            Creating intuitive interfaces that users love while meeting business objectives.
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- ADVANCED SKILLS -->
-                <div class="tier-label">Design Tools</div>
-                <div class="skills-tier">
-                    <div class="skill-node advanced" onclick="this.classList.toggle('active')">
-                        <h3>Figma & Adobe XD</h3>
-                        <div class="skill-level">Expert</div>
-                        <div class="skill-description">
-                            Professional prototyping, design systems, and collaborative workflows. 
-                            Creating interactive mockups and handoff-ready design specs.
-                        </div>
-                    </div>
-                    <div class="skill-node advanced" onclick="this.classList.toggle('active')">
-                        <h3>Adobe Creative Suite</h3>
-                        <div class="skill-level">Advanced</div>
-                        <div class="skill-description">
-                            Photoshop, Illustrator, and InDesign for visual design, photo editing, 
-                            vector graphics, and print/digital layouts.
-                        </div>
-                    </div>
-                    <div class="skill-node advanced" onclick="this.classList.toggle('active')">
-                        <h3>Web Development</h3>
-                        <div class="skill-level">Advanced</div>
-                        <div class="skill-description">
-                            HTML5, CSS3, JavaScript, and responsive frameworks. Building pixel-perfect, 
-                            performant websites from design to deployment.
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- FOUNDATION SKILLS -->
-                <div class="tier-label">Specialized Skills</div>
-                <div class="skills-tier">
-                    <div class="skill-node" onclick="this.classList.toggle('active')">
-                        <h3>User Research</h3>
-                        <div class="skill-level">Advanced</div>
-                        <div class="skill-description">
-                            Conducting user interviews, surveys, and usability testing. Creating personas 
-                            and user journey maps to inform design decisions.
-                        </div>
-                    </div>
-                    <div class="skill-node" onclick="this.classList.toggle('active')">
-                        <h3>Branding & Identity</h3>
-                        <div class="skill-level">Advanced</div>
-                        <div class="skill-description">
-                            Logo design, brand guidelines, color theory, and typography. Creating cohesive 
-                            visual identities that resonate with target audiences.
-                        </div>
-                    </div>
-                    <div class="skill-node" onclick="this.classList.toggle('active')">
-                        <h3>Accessibility (a11y)</h3>
-                        <div class="skill-level">Intermediate</div>
-                        <div class="skill-description">
-                            WCAG compliance, inclusive design practices, and ensuring digital experiences 
-                            work for everyone regardless of ability.
-                        </div>
-                    </div>
-                    <div class="skill-node" onclick="this.classList.toggle('active')">
-                        <h3>Design Systems</h3>
-                        <div class="skill-level">Advanced</div>
-                        <div class="skill-description">
-                            Creating scalable component libraries, design tokens, and documentation for 
-                            consistent brand experiences across products.
-                        </div>
-                    </div>
-                </div>
+    <!-- AVAILABLE FOR HIRE -->
+    <section style="background: linear-gradient(135deg, #6B7C59, #2A2A2A); color: white; padding: 4rem 2rem; text-align: center; box-shadow: 0 15px 60px rgba(0,0,0,0.3); border-radius: 20px; margin: 5rem 0; position: relative; overflow: hidden;">
+        <div style="position: relative; z-index: 2; max-width: 900px; margin: 0 auto;">
+            <div style="display: inline-block; background: rgba(255,215,0,0.2); padding: 0.8rem 2rem; border-radius: 50px; margin-bottom: 1.5rem; border: 2px solid rgba(255,215,0,0.5); backdrop-filter: blur(10px);">
+                <span style="font-size: 1.3rem; font-weight: 800; letter-spacing: 2px;">AVAILABLE FOR HIRE</span>
             </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Let's Create Together</h2>
-            <p class="intro">
-                Ready to bring your digital vision to life? Whether you need a stunning new website, 
-                a complete brand refresh, or intuitive UX design, Moonlit Studios is here to help. 
-                Let's start a conversation about your project!
+            
+            <h2 style="font-size: 3rem; margin-bottom: 1rem; color: white; text-shadow: 2px 2px 8px rgba(0,0,0,0.3); line-height: 1.2;">
+                Healthcare Tech Expert<br>Ready to <span style="color: var(--lunar-gold); font-weight: 900;">Start Immediately</span>
+            </h2>
+            
+            <p style="font-size: 1.3rem; line-height: 1.8; margin: 2rem auto; max-width: 700px; color: rgba(255,255,255,0.95);">
+                15 years healthcare operations expertise. Led teams of 130+. Managed multimillion-dollar budgets. Built 6 companies. Shipped HIPAA-compliant AI platforms. Full-stack developer and UI/UX designer.
             </p>
-            <div class="contact-links">
-                <a href="https://www.behance.net/hannahpagade" class="contact-link" target="_blank">
-                    <span>Behance</span>
+            
+            <div style="background: rgba(0,0,0,0.3); padding: 2.5rem; border-radius: 15px; margin: 3rem auto; max-width: 650px; border: 2px solid rgba(255,255,255,0.2); backdrop-filter: blur(10px);">
+                <h3 style="font-size: 1.6rem; margin-bottom: 1.5rem; color: var(--starlight); font-weight: 800;">Core Capabilities</h3>
+                <ul style="list-style: none; padding: 0; text-align: left; font-size: 1.15rem; line-height: 2;">
+                    <li><strong>Healthcare Operations</strong> — Deep understanding of clinical workflows, compliance, and regulatory requirements</li>
+                    <li><strong>Full-Stack Development</strong> — React, Node, Python. Complete ownership from design through deployment</li>
+                    <li><strong>HIPAA Compliance</strong> — Experience building secure, compliant healthcare applications</li>
+                    <li><strong>Proven Track Record</strong> — 6 businesses launched. Real revenue. Real users. Real impact</li>
+                    <li><strong>Immediate Availability</strong> — No ramp-up time. Fast turnaround on projects</li>
+                </ul>
+            </div>
+            
+            <div style="margin-top: 3rem;">
+                <a href="#contact" class="btn btn-primary" style="font-size: 1.3rem; padding: 1.2rem 3rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">
+                    Get In Touch
                 </a>
-                <a href="https://www.linkedin.com/in/hannahpagade" class="contact-link" target="_blank">
-                    <span>LinkedIn</span>
-                </a>
-                <a href="mailto:hello@moonlitstudios.design" class="contact-link">
-                    <span>Email</span>
-                </a>
+                <p style="margin-top: 1.5rem; font-size: 1rem; opacity: 0.9;">
+                    $150-300/hour depending on project scope
+                </p>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Moonlit Studios | Hannah Pagade - The CEO Who Codes</p>
-        <p style="margin-top: 0.5rem; font-size: 0.95rem; font-weight: 600; color: var(--gold);">🔥🦚 "Where the Phoenix Rises and the Peacock Dances" 🦚🔥</p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Built with 🌙 and lots of chai ☕</p>
-    </footer>    <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-            });
-        });
-
-        // Intersection Observer
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-
-        document.querySelectorAll('.project-card, .skill-node, .timeline-item, .about-content').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'all 0.6s ease-out';
-            observer.observe(el);
-        });
-
-        // Achievement Counter Animation
-        function animateCounters() {
-            const statNumbers = document.querySelectorAll('.stat-number');
-            statNumbers.forEach(stat => {
-                const target = parseInt(stat.getAttribute('data-target') || stat.textContent.replace(/[^0-9]/g, ''));
-                stat.setAttribute('data-target', target);
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding fade-in-section" role="region" aria-labelledby="contact-heading">
+        <div class="container">
+            <h2 id="contact-heading" class="section-title">Let's Build Something Amazing</h2>
+            
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Ready to build your healthcare platform? Have questions about a project? Let's talk.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <div class="contact-icon" aria-hidden="true">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:hannah.pagade@gmail.com" aria-label="Send email to hannah.pagade@gmail.com">hannah.pagade@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon" aria-hidden="true">📍</div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Westminster, Colorado<br>Available for remote projects nationwide</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon" aria-hidden="true">💼</div>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/hannah-pagade" target="_blank" rel="noopener noreferrer" aria-label="Connect with Hannah on LinkedIn (opens in new tab)">Connect with me</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="availability">
+                        <h4>Current Availability</h4>
+                        <p class="status" role="status" aria-live="polite"><span aria-hidden="true">✓</span> Accepting new projects</p>
+                        <p>Typical response time: 24 hours</p>
+                    </div>
+                </div>
                 
-                let current = 0;
-                const increment = target / 50;
-                const duration = 2000;
-                const stepTime = duration / 50;
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm" aria-label="Contact form">
+                        <div class="form-group">
+                            <label for="name">Your Name <span aria-label="required">*</span></label>
+                            <input type="text" id="name" name="name" required aria-required="true" autocomplete="name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address <span aria-label="required">*</span></label>
+                            <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="organization">Organization</label>
+                            <input type="text" id="organization" name="organization" autocomplete="organization">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="project-type">Project Type <span aria-label="required">*</span></label>
+                            <select id="project-type" name="project-type" required aria-required="true">
+                                <option value="">Select a service</option>
+                                <option value="healthcare-platform">Healthcare Platform Development</option>
+                                <option value="medical-website">Medical Website Design</option>
+                                <option value="consulting">Healthcare Tech Consulting</option>
+                                <option value="other">Other / Not Sure</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget</option>
+                                <option value="2500-5000">$2,500 - $5,000</option>
+                                <option value="5000-10000">$5,000 - $10,000</option>
+                                <option value="10000+">$10,000+</option>
+                                <option value="flexible">Flexible / Discuss</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Tell me about your project <span aria-label="required">*</span></label>
+                            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit" aria-label="Send your message">Send Message</button>
+                        <div class="form-status" role="status" aria-live="polite" aria-atomic="true"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer role="contentinfo" aria-label="Site footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Moonlit Studios</h3>
+                    <p>The Nurse Who Can Code</p>
+                </div>
                 
-                const counter = setInterval(() => {
-                    current += increment;
-                    if (current >= target) {
-                        stat.textContent = target.toLocaleString();
-                        clearInterval(counter);
-                    } else {
-                        stat.textContent = Math.floor(current).toLocaleString();
-                    }
-                }, stepTime);
-            });
+                <nav class="footer-links" aria-label="Footer navigation">
+                    <h4>Quick Links</h4>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <a href="https://www.linkedin.com/in/hannah-pagade" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn (opens in new tab)">LinkedIn</a>
+                    <a href="mailto:hannah.pagade@gmail.com" aria-label="Send email">Email</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hannah Pagade | Moonlit Studios. All rights reserved.</p>
+                <p>Built with precision. Designed with purpose. Healthcare expertise meets technical excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/konami.js"></script>
+    <script src="js/stats-counter.js"></script>
+    <script src="js/skills-animation.js"></script>
+    
+    <!-- Typing Effect -->
+    <script>
+    const phrases = ["Nurse Who Can Code", "Healthcare Developer", "Full-Stack Engineer"];
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+        const typedElement = document.getElementById('typed-text');
+        if (!typedElement) return;
+        
+        const currentPhrase = phrases[phraseIndex];
+        
+        if (isDeleting) {
+            typedElement.textContent = currentPhrase.substring(0, charIndex - 1);
+            charIndex--;
+        } else {
+            typedElement.textContent = currentPhrase.substring(0, charIndex + 1);
+            charIndex++;
         }
-
-        const statsObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
-                    entry.target.classList.add('animated');
-                    animateCounters();
-                }
-            });
-        }, { threshold: 0.5 });
-
-        const aboutSection = document.querySelector('#about');
-        if (aboutSection) statsObserver.observe(aboutSection);
-
-        // Skill Filters
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                e.target.classList.add('active');
-                
-                const category = e.target.dataset.category;
-                document.querySelectorAll('.skill-node').forEach(node => {
-                    if (category === 'all' || node.dataset.category === category) {
-                        node.style.display = 'flex';
-                        node.style.opacity = '1';
-                    } else {
-                        node.style.opacity = '0.2';
-                    }
-                });
-            });
-        });
-
-        // Konami Code Easter Egg
-        let konamiCode = [];
-        const konamiSequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
-
-        document.addEventListener('keydown', (e) => {
-            konamiCode.push(e.key);
-            konamiCode = konamiCode.slice(-10);
-            
-            if (konamiCode.join(',') === konamiSequence.join(',')) {
-                document.body.style.animation = 'rainbow 5s linear infinite';
-                const style = document.createElement('style');
-                style.textContent = `
-                    @keyframes rainbow {
-                        0% { filter: hue-rotate(0deg); }
-                        100% { filter: hue-rotate(360deg); }
-                    }
-                `;
-                document.head.appendChild(style);
-                
-                setTimeout(() => {
-                    alert('🎉 You found the secret! Enjoy the surprise.');
-                }, 500);
-            }
-        });
-
-
         
+        if (!isDeleting && charIndex === currentPhrase.length) {
+            setTimeout(() => { isDeleting = true; }, 2000);
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+        }
         
-        // Floating Peacock Button - Scroll to Top
-        (function() {
-            const chaiButton = document.getElementById('chaiButton');
-            if (!chaiButton) return;
+        const speed = isDeleting ? 50 : 100;
+        setTimeout(typeEffect, speed);
+    }
 
-            // Show/hide button based on scroll
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 500) {
-                    chaiButton.classList.add('visible');
-                } else {
-                    chaiButton.classList.remove('visible');
-                }
-            });
-
-            // Smooth scroll to top
-            chaiButton.addEventListener('click', () => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-        })();
-
-        // 🌟 EPIC INTERACTIVE FEATURES 🌟
-        
-        // 1. Animated Starfield Background
-        (function() {
-            const hero = document.querySelector('.hero');
-            if (!hero) return;
-            
-            const canvas = document.createElement('canvas');
-            canvas.style.position = 'absolute';
-            canvas.style.top = '0';
-            canvas.style.left = '0';
-            canvas.style.width = '100%';
-            canvas.style.height = '100%';
-            canvas.style.zIndex = '0';
-            canvas.style.pointerEvents = 'none';
-            hero.style.position = 'relative';
-            hero.insertBefore(canvas, hero.firstChild);
-            
-            const ctx = canvas.getContext('2d');
-            let stars = [];
-            let animationId;
-            
-            function resizeCanvas() {
-                canvas.width = hero.offsetWidth;
-                canvas.height = hero.offsetHeight;
-                initStars();
-            }
-            
-            function initStars() {
-                stars = [];
-                const numStars = Math.floor((canvas.width * canvas.height) / 3000);
-                for (let i = 0; i < numStars; i++) {
-                    stars.push({
-                        x: Math.random() * canvas.width,
-                        y: Math.random() * canvas.height,
-                        radius: Math.random() * 1.5,
-                        opacity: Math.random(),
-                        speed: Math.random() * 0.5 + 0.2
-                    });
-                }
-            }
-            
-            function drawStars() {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                stars.forEach(star => {
-                    ctx.beginPath();
-                    ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-                    ctx.fillStyle = `rgba(255, 215, 0, ${star.opacity})`;
-                    ctx.fill();
-                    
-                    star.opacity += star.speed * 0.01;
-                    if (star.opacity > 1 || star.opacity < 0) star.speed *= -1;
-                });
-                animationId = requestAnimationFrame(drawStars);
-            }
-            
-            resizeCanvas();
-            drawStars();
-            window.addEventListener('resize', resizeCanvas);
-        })();
-        
-        // 2. Typing Animation for "The CEO Who Codes"
-        (function() {
-            const titleElement = document.querySelector('.title');
-            if (!titleElement) return;
-            
-            const originalText = "The CEO Who Codes";
-            titleElement.textContent = "";
-            titleElement.style.borderRight = "2px solid var(--gold)";
-            titleElement.style.paddingRight = "5px";
-            titleElement.style.display = "inline-block";
-            
-            let charIndex = 0;
-            function typeWriter() {
-                if (charIndex < originalText.length) {
-                    titleElement.textContent += originalText.charAt(charIndex);
-                    charIndex++;
-                    setTimeout(typeWriter, 100);
-                } else {
-                    setTimeout(() => {
-                        titleElement.style.borderRight = "none";
-                    }, 500);
-                }
-            }
-            
-            setTimeout(typeWriter, 1000);
-        })();
-        
-        // 3. 3D Flip Animation for Trifecta Cards
-        (function() {
-            const trifectaCards = document.querySelectorAll('.trifecta-card');
-            trifectaCards.forEach(card => {
-                card.style.transition = 'transform 0.6s';
-                card.style.transformStyle = 'preserve-3d';
-                
-                card.addEventListener('mouseenter', () => {
-                    card.style.transform = 'rotateY(10deg) scale(1.05)';
-                    card.style.boxShadow = '0 10px 40px rgba(212, 175, 55, 0.3)';
-                });
-                
-                card.addEventListener('mouseleave', () => {
-                    card.style.transform = 'rotateY(0deg) scale(1)';
-                    card.style.boxShadow = '0 4px 20px rgba(0,0,0,0.08)';
-                });
-            });
-        })();
-        
-        // 4. Moonlight Cursor Glow Effect
-        (function() {
-            const glow = document.createElement('div');
-            glow.style.position = 'fixed';
-            glow.style.width = '300px';
-            glow.style.height = '300px';
-            glow.style.borderRadius = '50%';
-            glow.style.background = 'radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%)';
-            glow.style.pointerEvents = 'none';
-            glow.style.zIndex = '9999';
-            glow.style.transform = 'translate(-50%, -50%)';
-            glow.style.transition = 'opacity 0.3s';
-            glow.style.opacity = '0';
-            document.body.appendChild(glow);
-            
-            let isHovering = false;
-            
-            document.addEventListener('mousemove', (e) => {
-                glow.style.left = e.clientX + 'px';
-                glow.style.top = e.clientY + 'px';
-                if (!isHovering) {
-                    glow.style.opacity = '1';
-                    isHovering = true;
-                }
-            });
-            
-            document.addEventListener('mouseleave', () => {
-                glow.style.opacity = '0';
-                isHovering = false;
-            });
-        })();
-        
-        // 5. Parallax Scroll Effect
-        (function() {
-            const hero = document.querySelector('.hero');
-            if (!hero) return;
-            
-            window.addEventListener('scroll', () => {
-                const scrolled = window.pageYOffset;
-                const heroContent = hero.querySelector('.hero-content');
-                if (heroContent && scrolled < window.innerHeight) {
-                    heroContent.style.transform = `translateY(${scrolled * 0.4}px)`;
-                    heroContent.style.opacity = 1 - (scrolled / window.innerHeight);
-                }
-            });
-        })();
-        
-        // 6. Project Cards Hover Tilt Effect
-        (function() {
-            const projectCards = document.querySelectorAll('.project-card');
-            projectCards.forEach(card => {
-                card.addEventListener('mousemove', (e) => {
-                    const rect = card.getBoundingClientRect();
-                    const x = e.clientX - rect.left;
-                    const y = e.clientY - rect.top;
-                    const centerX = rect.width / 2;
-                    const centerY = rect.height / 2;
-                    const rotateX = (y - centerY) / 20;
-                    const rotateY = (centerX - x) / 20;
-                    
-                    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
-                });
-                
-                card.addEventListener('mouseleave', () => {
-                    card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
-                });
-            });
-        })();
-        
-        // 7. Peacock Trail Cursor Effect
-        (function() {
-            const peacocks = [];
-            const maxPeacocks = 5;
-            
-            document.addEventListener('mousemove', (e) => {
-                if (Math.random() > 0.7) return; // Only 30% of movements create trail
-                
-                const peacock = document.createElement('div');
-                peacock.textContent = '🦚';
-                peacock.style.position = 'fixed';
-                peacock.style.left = e.clientX + 'px';
-                peacock.style.top = e.clientY + 'px';
-                peacock.style.pointerEvents = 'none';
-                peacock.style.fontSize = '20px';
-                peacock.style.zIndex = '9998';
-                peacock.style.transition = 'all 0.5s ease-out';
-                document.body.appendChild(peacock);
-                
-                peacocks.push(peacock);
-                
-                setTimeout(() => {
-                    peacock.style.opacity = '0';
-                    peacock.style.transform = 'translateY(-30px) scale(0.5)';
-                }, 100);
-                
-                setTimeout(() => {
-                    peacock.remove();
-                    peacocks.shift();
-                }, 600);
-                
-                if (peacocks.length > maxPeacocks) {
-                    const old = peacocks.shift();
-                    if (old && old.parentNode) old.remove();
-                }
-            });
-        })();
-        
-        // 8. Scroll Progress Bar
-        (function() {
-            const progressBar = document.createElement('div');
-            progressBar.style.position = 'fixed';
-            progressBar.style.top = '0';
-            progressBar.style.left = '0';
-            progressBar.style.width = '0%';
-            progressBar.style.height = '4px';
-            progressBar.style.background = 'linear-gradient(90deg, var(--gold), var(--olive))';
-            progressBar.style.zIndex = '10000';
-            progressBar.style.transition = 'width 0.1s';
-            document.body.appendChild(progressBar);
-            
-            window.addEventListener('scroll', () => {
-                const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                const scrolled = (winScroll / height) * 100;
-                progressBar.style.width = scrolled + '%';
-            });
-        })();
-
+    document.addEventListener('DOMContentLoaded', typeEffect);
     </script>
-
-    <!-- Moonlit Peacock Button - Scroll to Top 🦚 -->
-    <button class="moonlit-button" id="chaiButton" aria-label="Scroll to top">
-        <span class="peacock-feather" style="font-size: 2rem; display: block;">🦚</span>
-    </button>
-
-
 </body>
 </html>
